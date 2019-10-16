@@ -1,0 +1,7 @@
+<h1><%= @project.name %></h1>
+<h2><%= @project.location %></h2>
+<% @project.images.each do |image| %>
+  <%= image_tag image %>
+<% end %>
+<%= link_to "Edit", edit_project_path(@project) %>
+<%= link_to "Edit Images", edit_project_images_path(@project) %>

@@ -1,0 +1,7 @@
+<h1><%= @project.name %></h1>
+<h2><%= @project.location %></h2>
+<% @project.images.each do |image| %>
+  <%= image_tag image %>
+  <%= link_to "Remove", delete_project_image_path(@project.id, image.id), method: :delete %>
+<% end %>
+<%= link_to "Add more images", project_images_path(@project)

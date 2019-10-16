@@ -11,5 +11,9 @@
 
   <body>
     <%= yield %>
+    <h1><%= t 'hello' %></h1>
+
+    <li><%= link_to 'English', root_path(locale: :en) %></li>
+    <li><%= link_to 'Spanish', root_path(locale: :es) %></li>
   </body>
 </html>
