@@ -6,11 +6,16 @@
   <%= f.label :description %>
   <%= f.text_field :description %>
   <%= f.label :type %>
-  <%= f.select :ptype , [[t('reform'), t('reform')], [t('construction'), t('construction') ]] %> 
+  <%= f.select :ptype , [[t('reform'), t('reform')], [t('construction'), t('construction') ]] %>
 
 
   <%= f.label :images %>
   <%= f.file_field :images, multiple: true %>
+
+    <button id="new-feature" type="button">Newfeature</button>
+    <div id="features"></div>
+
+
 
   <%= f.submit %>
 <% end  %>
