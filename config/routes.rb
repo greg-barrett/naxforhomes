@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
+
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
+  devise_for :admins
   root  to: 'static_pages#home'
   get 'static_pages/about', to: 'static_pages#about', as: 'about'
   get 'static_pages/where', to: 'static_pages#where', as: 'where'

@@ -15,5 +15,8 @@
 
     <li><%= link_to 'English', root_path(locale: :en) %></li>
     <li><%= link_to 'Spanish', root_path(locale: :es) %></li>
+    <li><%= link_to 'Logout', destroy_admin_session_path, method: :delete %></li>
+    <li><%= link_to 'Sign in', new_admin_session_path %></li>
+
   </body>
 </html>

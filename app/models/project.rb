@@ -1,5 +1,5 @@
 class Project < ApplicationRecord
   has_many :features, dependent: :destroy
   has_many_attached :images
-  enum ptype: [:Reform, :Construction]
+  translates :description, :ptype
 end

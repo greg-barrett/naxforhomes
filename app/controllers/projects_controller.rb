@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+  before_action :authenticate_admin!, only: [:edit, :update, :destroy, :edit_project_images, :delete_project_image, :delete_images]
 
   def new
     @project=Project.new
@@ -53,11 +54,6 @@ class ProjectsController < ApplicationController
     @project.images
   end
 
-  def add_images
-    @project=Project.find(params[:id])
-    @project.images.attach(params[:images])
-    redirect_to @project
-  end
   private
 
   def project_params
