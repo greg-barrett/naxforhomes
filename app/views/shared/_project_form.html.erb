@@ -3,6 +3,11 @@
   <%= f.text_field :name  %>
   <%= f.label :location %>
   <%= f.text_field :location %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :type %>
+  <%= f.select :ptype , [['Reform', :Reform], ['Construction', :Construction ]] %> 
+
 
   <%= f.label :images %>
   <%= f.file_field :images, multiple: true %>

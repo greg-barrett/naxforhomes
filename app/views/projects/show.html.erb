@@ -1,5 +1,7 @@
 <h1><%= @project.name %></h1>
 <h2><%= @project.location %></h2>
+<h2><%= @project.description %></h2>
+<h2><%= @project.ptype %></h2>
 <% @project.images.each do |image| %>
   <%= image_tag image %>
 <% end %>
