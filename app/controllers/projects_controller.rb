@@ -32,6 +32,13 @@ class ProjectsController < ApplicationController
     if params[:project][:images]
       @project.images.attach(params[:project][:images])
     end
+    #delete unwanted images from project within edit
+    if params[:image_ids]
+      params[:image_ids].each do |key, value|
+        @image = ActiveStorage::Attachment.find(key)
+        @image.purge
+      end
+    end
     redirect_to @project
   end
 
@@ -40,20 +47,6 @@ class ProjectsController < ApplicationController
     redirect_to root_url
   end
 
-  def edit_project_images
-    @project=Project.find(params[:id])
-  end
-
-  def delete_project_image
-    @project=Project.find(params[:id])
-    @image = ActiveStorage::Attachment.find(params[:image_id])
-    @image.purge
-    redirect_to edit_project_images_path(@project)
-  end
-  def delete_images
-    @project=Project.find(params[:id])
-    @project.images
-  end
 
   private
 

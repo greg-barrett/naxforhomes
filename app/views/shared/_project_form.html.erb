@@ -11,6 +11,18 @@
 
   <%= f.label :images %>
   <%= f.file_field :images, multiple: true %>
+
+  <% if f.object.images %>
+  <% f.object.images.each do |image| %>
+    <%= image_tag image %>
+    <%= check_box_tag("[image_ids][#{image.id}]") %>
+    <%= label_tag("[image_ids][#{image.id}]", "Delete") %>
+
+  <% end %>
+  <% else %>
+    <%= feature.label :image %>
+    <%= feature.file_field :image %>
+  <% end %>
     <div id="features">
       <button id="new-feature" type="button">Add feature</button>
 
@@ -24,7 +36,7 @@
               <%= feature.file_field :image %>
             <% end %>
 
-        
+
             <%= feature.label :description %>
             <%= feature.text_field :description %>
             <%= feature.label :delete %>
