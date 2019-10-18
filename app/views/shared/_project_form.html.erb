@@ -11,9 +11,30 @@
 
   <%= f.label :images %>
   <%= f.file_field :images, multiple: true %>
+    <div id="features">
+      <button id="new-feature" type="button">Add feature</button>
 
-    <button id="new-feature" type="button">Newfeature</button>
-    <div id="features"></div>
+        <%= f.fields_for :features do |feature| %>
+          <div class="feature-fields">
+
+            <% if feature.object.image %>
+              <%= image_tag feature.object.image %>
+            <% else %>
+              <%= feature.label :image %>
+              <%= feature.file_field :image %>
+            <% end %>
+
+        
+            <%= feature.label :description %>
+            <%= feature.text_field :description %>
+            <%= feature.label :delete %>
+            <%= feature.check_box :_destroy %>
+
+          </div>
+        <% end  %>
+      </div>
+
+    </div>
 
 
 

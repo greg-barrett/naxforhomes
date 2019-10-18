@@ -3,7 +3,6 @@ class ProjectsController < ApplicationController
 
   def new
     @project=Project.new
-    3.times {@project.features.build}
   end
 
   def create
@@ -24,7 +23,7 @@ class ProjectsController < ApplicationController
 
   def edit
     @project=Project.find(params[:id])
-    3.times {@project.features.build}
+
   end
 
   def update
@@ -59,7 +58,7 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params[:project].permit(:name, :location, :description, :ptype)
+    params[:project].permit(:name, :location, :description, :ptype, features_attributes: [:id, :image, :description, :_destroy])
   end
 
 end
