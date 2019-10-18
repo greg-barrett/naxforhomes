@@ -3,7 +3,7 @@ class AddTranslationToFeatures < ActiveRecord::Migration[6.0]
     add_column :features, :project_id, :integer
     reversible do |dir|
       dir.up do
-        Feature.create_translation_table! :description => {:type => :text, :null => false}
+        Feature.create_translation_table! :description => {:type => :text}
       end
 
       dir.down do
