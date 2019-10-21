@@ -1,0 +1,89 @@
+.nav-container {
+  position: relative;
+  nav{
+    background-color: white;
+  }
+}
+.naxfor-logo {
+  width: 150px;
+}
+.social-logos {
+  width: 30px;
+}
+.lang-links-div {
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  color: #545454;
+  span {
+    padding: 0 5px;
+  }
+  .lang-links {
+    color: #545454;
+    font-size: 12px;
+  }
+
+}
+.social-links-div {
+  //margin: 0 40px;
+  padding: .5rem 1rem;
+  display: flex;
+  .insta {
+    margin-right: 10px;
+  }
+}
+.nav-links {
+  color: #545454;
+  align-items: center;
+  display: block;
+  padding: .5rem 1rem;
+}
+.nav-links:hover {
+  text-decoration: underline;
+  color: #545454;
+
+}
+//css for screens over 991px
+@media only screen and (min-width: 991px) {
+  //set nav to top of screen
+  nav{
+    height: 80px;
+    background-color: white;
+  }
+  #fix-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .naxfor-logo {
+    width: 180px;
+    position: absolute;
+    top: 10px;
+  }
+
+  .lang-links-div {
+    padding: 0 10px;
+  }
+
+  .social-links-div {
+    margin: 0 40px;
+    padding: 0 5px;
+    align-items: center;
+    a {
+      padding: 0 5px;
+    }
+  }
+  .nav-links {
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    font-size: 1.2em;
+  }
+  .nav-links:hover {
+    border-bottom: 5px solid #e8e1d5;
+    text-decoration: underline;
+    text-decoration: none;
+
+  }
+}

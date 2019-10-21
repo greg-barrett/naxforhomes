@@ -30,6 +30,13 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 es:
-  hello: "Hola Mundo"
+  nav:
+    about_us: "Empresa"
+    projects: "Proyectos"
+    location: "Dónde"
+    legal: "Legal"
+    contact: "Contacto"
+  home:
+    tagline: "Creadores de casas a medida en Marbella y sus alrededores"
   construction: "Edification"
   reform: "Reforma"

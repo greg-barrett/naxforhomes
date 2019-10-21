@@ -1,0 +1,43 @@
+<section class="nav-container">
+  <nav class="navbar navbar-expand-lg navbar-light" id="fix-top">
+    <%= link_to root_url, class: "" do %>
+      <%= image_tag "naxfor_logo", class: "naxfor-logo" %>
+    <% end %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <%= link_to ((t 'nav.about_us')), about_path, class: "nav-links" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to (t 'nav.projects'), projects_path, class: "nav-links" %>
+        </li>
+        <li>
+          <%= link_to (t 'nav.location'), where_path, class: "nav-links" %>
+        </li>
+        <li>
+          <%= link_to (t 'nav.legal'), legal_path, class: "nav-links" %>
+        </li>
+        <li>
+          <%= link_to (t 'nav.contact'), contact_path, class: "nav-links" %>
+        </li>
+        <div class="social-links-div">
+          <%= link_to href: "#", class: "nav-link" do %>
+            <%= image_tag "instagram_logo", class: "social-logos insta" %>
+          <% end %>
+          <%= link_to href: "#", class: "nav-link" do %>
+            <%= image_tag "facebook_logo", class: "social-logos" %>
+          <% end %>
+        </div>
+        <div class="lang-links-div">
+          <%= link_to 'EN', root_path(locale: :en), class: "lang-links" %>
+          <span>|</span>
+          <%= link_to 'ES', root_path(locale: :es), class: "lang-links" %>
+        </div>
+      </ul>
+    </div>
+  </nav>
+</section>
