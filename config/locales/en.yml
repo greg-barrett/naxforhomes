@@ -39,5 +39,18 @@ en:
   home:
     tagline: "Creators of Bespoke Homes in and around Marbella"
     about_intro: "English vultum tibi, si incessum fingeres,quo gravior viderere, non esses tui similis. Laelius clamores sofòw ille so lebat Edere compellans gumias ex ordine nostros..."
+    stats:
+      one:
+        title: "Expert Team"
+        phrase: "Over 20 years of Experience"
+      two:
+        title: "Bespoke Design"
+        phrase: "Partner with cutting edge designers and architects"
+      three:
+        title: "Quality Assured"
+        phrase: "Download Quailty Declaration"
+    where_intro: "From our head office in Malaga our team is well placed to manage your project in Marbella and the surrounding area..."
+
+
   construction: "Construction"
   reform: "Reform"

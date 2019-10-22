@@ -1,4 +1,4 @@
-<div class="container-fluid">
+
   <section id="homepage-carousel" class="row carousel slide" data-ride="carouse" data-interval="7000" data-wrap="true">
     <div class="carousel-inner">
       <div class="carousel-item car-top active" id="slide-one">
@@ -75,4 +75,32 @@
       </section>
   </section>
 
-</div>
+  <section class="confidence row">
+    <div class="stats col-lg-4">
+      <h4><%= t 'home.stats.one.title' %></h4>
+      <p><%= t 'home.stats.one.phrase' %></p>
+
+    </div>
+    <div class="stats col-lg-4">
+      <h4><%= t 'home.stats.two.title' %></h4>
+      <p><%= t 'home.stats.two.phrase' %></p>
+
+    </div>
+    <div class="stats col-lg-4">
+      <h4><%= t 'home.stats.three.title' %></h4>
+      <p><%= t 'home.stats.three.phrase' %></p>
+
+    </div>
+  </section>
+
+  <section class="row image-over-section">
+      <div class="home-about-img-div col-lg-8">
+        <div id="hm-abt-img"></div>
+      </div>
+      <div class="home-about-txt-div col-lg-4">
+        <%= link_to where_path do %>
+          <p><%= capify(t "home.where_intro") %><%= image_tag "right.png", class:"right-arrow" %></p>
+        <% end %>
+        <h3 class="fade-header">Where?</h3>
+      </div>
+  </section>

@@ -1,0 +1,33 @@
+.footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  background-color: #e8e1d5;
+  .logo {
+    img {
+      width: 100%;
+      max-width:180px;
+    }
+  }
+  .data {
+
+  }
+  .address{
+    margin-top: 45px;
+    p {
+      margin-bottom: .5rem;
+    }
+
+  }
+  .links{
+    margin-top: 45px;
+    p {
+      margin-bottom: .5rem;
+    }
+
+  }
+  .safety {
+    img {
+      width:30%;
+    }
+  }
+}
