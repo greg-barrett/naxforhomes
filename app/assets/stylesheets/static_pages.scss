@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //homepage
 
-.carousel-item {
+.car-top {
   position: relative;
   background-color: red;
   height: 100vh;
@@ -49,5 +49,123 @@
   text-align: right;
   h2 {
     padding: 40px 80px;
+  }
+}
+
+.image-over-section {
+  margin-top: 15px;
+  background-color: #e8e1d5;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+
+  .home-about-img-div {
+    position: relative;
+    height: 500px;
+    #hm-abt-img {
+      background-image: url('four.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:cover;
+      height: 530px;
+      position: relative;
+      top: -15px;
+    }
+  }
+  .home-about-txt-div {
+    position: relative;
+    p{
+      padding: 60px 50px 40px 50px;
+      text-indent: -20px;
+      text-align: justify;
+    }
+    .fade-header {
+      position: absolute;
+      bottom: 3px;
+      right: 10px;
+      margin-bottom: 0px;
+      font-size: 2.5em;
+      color: #545454;
+    }
+    .cap-letter {
+      font-size: 4em;
+      line-height: .25em;
+    }
+    .right-arrow {
+      width: 20px;
+      margin-left: 10px
+    }
+  }
+}
+//css for screens over 991px
+
+
+//projects carousel
+.project-car-section {
+  height: 658px;
+  background-color: #e8e1d5;
+}
+#projcts-home-car {
+  padding: 0;
+  margin-top: 100px;
+  background-color: #e8e1d5;
+  .carousel-inner {
+    width: 100%;
+  }
+}
+.car-project-hm {
+  position: relative;
+  background-color: #e8e1d5;
+  height: 600px;
+  overflow: visible;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  .project-data {
+    width: 100%;
+    position: absolute;
+    top: 600px;
+    background-color: #e8e1d5;
+    .name {
+      padding: 10px 0 10px 10px;
+      display: inline-block;
+      float: left;
+
+    }
+    .right-arrow {
+      height: .8em;
+      line-height: 1.2em;
+      margin-left: 10px
+    }
+    .arrows {
+      width: 25px;
+      opacity: .4;
+    }
+    .arrows:hover {
+      opacity: .6;
+    }
+    .p-controls{
+      display: inline-block;
+      float: right;
+      padding-top: 16px;
+
+    }
+
+  }
+}
+@media only screen and (min-width: 991px) {
+  .image-over-section {
+
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    .home-about-txt-div {
+      p{
+        padding: 100px 50px;
+      }
+    }
+  }
+  #projcts-home-car {
+    .carousel-inner {
+      width: 95%;
+    }
   }
 }

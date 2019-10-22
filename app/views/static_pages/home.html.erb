@@ -1,18 +1,78 @@
-<section id="homepage-carousel" class="carousel slide" data-ride="carouse" data-interval="7000" data-wrap="true">
-  <div class="carousel-inner">
-    <div class="carousel-item active" id="slide-one">
+<div class="container-fluid">
+  <section id="homepage-carousel" class="row carousel slide" data-ride="carouse" data-interval="7000" data-wrap="true">
+    <div class="carousel-inner">
+      <div class="carousel-item car-top active" id="slide-one">
+      </div>
+      <div class="carousel-item car-top" id="slide-two">
+      </div>
+      <div class="carousel-item car-top" id="slide-three">
+      </div>
+      <div class="carousel-item car-top" id="slide-four">
+      </div>
+      <div class="main-title-div">
+        <h1 class="title">NAXFOR HOMES</h1>
+      </div>
     </div>
-    <div class="carousel-item" id="slide-two">
-    </div>
-    <div class="carousel-item" id="slide-three">
-    </div>
-    <div class="carousel-item" id="slide-four">
-    </div>
-    <div class="main-title-div">
-      <h1 class="title">NAXFOR HOMES</h1>
-    </div>
-  </div>
-</section>
-<section class="tag-line-section">
-  <h2><%= t 'home.tagline' %></h2>
-</section>
+  </section>
+
+  <section class="tag-line-section">
+    <h2><%= t 'home.tagline' %></h2>
+  </section>
+
+  <section class="row image-over-section">
+      <div class="home-about-img-div col-lg-8">
+        <div id="hm-abt-img"></div>
+      </div>
+      <div class="home-about-txt-div col-lg-4">
+        <%= link_to about_path do %>
+          <p><%= capify(t "home.about_intro") %><%= image_tag "right.png", class:"right-arrow" %></p>
+        <% end %>
+        <h3 class="fade-header">Naxfor Homes</h3>
+      </div>
+  </section>
+
+  <section class="row">
+    <section id="projcts-home-car" class="col-lg-12 carousel slide" data-ride="carouse" data-interval="7000" data-wrap="true">
+      <div class="carousel-inner project-car-section">
+
+        <div class="carousel-item car-project-hm active" id="slide-one">
+          <div class="project-data">
+            <h2 class="name">Project Name 1 <%= image_tag "right.png", class:"right-arrow" %></h2>
+            <a class="p-controls" href="#projcts-home-car" role="button" data-slide="next">
+              <%= image_tag "arrow-right.png", class:"arrows" %>
+            </a>
+            <a class="p-controls" href="#projcts-home-car" role="button" data-slide="prev">
+              <%= image_tag "arrow-left.png", class:"arrows" %>
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel-item car-project-hm" id="slide-two">
+          <div class="project-data">
+            <h2 class="name">Project Name 2 <%= image_tag "right.png", class:"right-arrow" %></h2>
+            <a class="p-controls" href="#projcts-home-car" role="button" data-slide="next">
+              <%= image_tag "arrow-right.png", class:"arrows" %>
+            </a>
+            <a class="p-controls" href="#projcts-home-car" role="button" data-slide="prev">
+              <%= image_tag "arrow-left.png", class:"arrows" %>
+            </a>
+          </div>
+        </div>
+
+        <div class="carousel-item car-project-hm" id="slide-three">
+          <div class="project-data">
+            <h2 class="name">Project Name 3 <%= image_tag "right.png", class:"right-arrow" %></h2>
+            <a class="p-controls" href="#projcts-home-car" role="button" data-slide="next">
+              <%= image_tag "arrow-right.png", class:"arrows" %>
+            </a>
+            <a class="p-controls" href="#projcts-home-car" role="button" data-slide="prev">
+              <%= image_tag "arrow-left.png", class:"arrows" %>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      </section>
+  </section>
+
+</div>
