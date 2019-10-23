@@ -50,6 +50,10 @@ es:
         title: "Calidad Asegurada"
         phrase: "Descargar Politica de Calidad"
     where_intro: "Desde nuestra oficina central en Málaga, nuestro equipo está bien ubicado para gestionar su proyecto en Marbella y sus alrededores.."
-
+    legal_notice: "Aviso Legal"
+    privacy: "Privacidad"
+  projects:
+    project_type: "Tipo de Proyecto"
+    location: "Ubicación"
   construction: "Edification"
   reform: "Reforma"

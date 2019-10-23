@@ -1,3 +1,134 @@
 // Place all the styles related to the Projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#project-show-carousel {
+  padding: 0px;
+  margin-top: 80px;
+}
+.project-car-section-show {
+  position: relative;
+  overflow:auto;
+  background-color: #e8e1d5;
+
+  .car-project-sw {
+    height: 600px;
+    width: 95%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+
+}
+.project-data-sw {
+  position: relative;
+  padding: 30px;
+  background-color: #e8e1d5;
+  .name {
+    font-size: 2.4rem;
+  }
+  p {
+    font-size: 1.3em;
+    margin-bottom: 0;
+    padding-left: 15px;
+  }
+  span {
+    font-size: .9em;
+    font-weight: bold;
+    letter-spacing: 2px
+  }
+  .controlls-div {
+    position: absolute;
+    right: 5%;
+    top: 25px;
+    .arrows {
+
+      opacity: .4;
+    }
+    .arrows:hover {
+      opacity: .6;
+    }
+  }
+}
+.feature-section{
+  position: relative;
+  margin: 15px 0 0 0;
+  .feature-image-div {
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .feature-text-div{
+    padding: 50px 30px 30px 50px;
+    p {
+      text-indent: -20px;
+      padding: 0 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+.feature-section {
+  .right {
+    right: 0px;
+    border-left: 15px solid white;
+  }
+  .left {
+    left: 0px;
+    border-right: 15px solid white;
+  }
+  .feature-text-div {
+    padding: 250px 40px 0 40px;
+    z-index: 1;
+    position: absolute;
+    width: 33%;
+    right: 0px;
+    height: 100vh;
+    top: 0px;
+
+    p {
+      text-indent: -20px;
+      text-align: justify;
+    }
+  }
+  .feature-text-div::after {
+    content: "";
+    background: #fff;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    }
+  }
+}
+//index
+
+.spacer {
+  height: 80px;
+  margin-bottom: 50px;
+}
+.project-index-text {
+  padding-top: 40px;
+  h1 {
+    margin-left: 20px;
+  }
+  .project-text {
+    padding: 0px 20px 0 20px;
+  }
+}
+.right-arrow-index {
+  vertical-align: initial;
+}
+@media only screen and (min-width: 991px) {
+  .project-index-text {
+    padding-top: 100px;
+
+    .project-text {
+      padding: 25px 40px 0 40px;
+    }
+  }
+}

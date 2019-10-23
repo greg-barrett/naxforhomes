@@ -50,6 +50,11 @@ en:
         title: "Quality Assured"
         phrase: "Download Quailty Declaration"
     where_intro: "From our head office in Malaga our team is well placed to manage your project in Marbella and the surrounding area..."
+    legal_notice: "Legal Notice"
+    privacy: "Privacy"
+  projects:
+    project_type: "Project Type"
+    location: "Location"
 
 
   construction: "Construction"

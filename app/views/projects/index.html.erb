@@ -1,0 +1,19 @@
+<div class="spacer"></div>
+<% @projects.each do |project| %>
+  <section class="row image-over-section">
+
+      <div class="home-about-img-div col-lg-8">
+        <%= link_to project_path(project) do %>
+          <div id="hm-abt-img" style="background-image: url(<%= rails_blob_url(project.images.first) if project.images.first %>)"></div>
+        <% end %>
+      </div>
+
+      <div class="home-about-txt-div col-lg-4 project-index-text">
+        <%= link_to project_path(project) do %>
+          <h1><%= project.name %><%= image_tag "right.png", class:"right-arrow right-arrow-index" %></h1>
+        <% end %>
+        <p class="project-text"><%= project.description %></p>
+        <h3 class="fade-header"><%= project.location %></h3>
+      </div>
+  </section>
+<% end %>

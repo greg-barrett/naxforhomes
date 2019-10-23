@@ -43,20 +43,21 @@
   color: #545454;
 
 }
+#fix-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+
+}
 //css for screens over 991px
 @media only screen and (min-width: 991px) {
   //set nav to top of screen
   nav{
-    height: 80px;
     background-color: white;
   }
-  #fix-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-  }
+
   .naxfor-logo {
     width: 180px;
     position: absolute;

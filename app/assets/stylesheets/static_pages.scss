@@ -2,7 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //homepage
-
+#homepage-carousel {
+  margin-top: 80px;
+}
 .car-top {
   position: relative;
   background-color: red;
@@ -53,7 +55,7 @@
 }
 
 .image-over-section {
-  margin-top: 15px;
+  margin: 45px 0;
   background-color: #e8e1d5;
   border-left: 5px solid white;
   border-right: 5px solid white;
@@ -73,7 +75,7 @@
   }
   .home-about-txt-div {
     position: relative;
-    p{
+    .home-text{
       padding: 60px 50px 40px 50px;
       text-indent: -20px;
       text-align: justify;
@@ -86,15 +88,16 @@
       font-size: 2.5em;
       color: #545454;
     }
-    .cap-letter {
-      font-size: 4em;
-      line-height: .25em;
-    }
+
     .right-arrow {
       width: 20px;
       margin-left: 10px
     }
   }
+}
+.cap-letter {
+  font-size: 4em;
+  line-height: .25em;
 }
 //css for screens over 991px
 
@@ -106,7 +109,7 @@
 }
 #projcts-home-car {
   padding: 0;
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 50px;
   background-color: #e8e1d5;
   .carousel-inner {
@@ -173,13 +176,14 @@
 }
 
 @media only screen and (min-width: 991px) {
+
   .image-over-section {
 
     border-left: 20px solid white;
     border-right: 20px solid white;
     .home-about-txt-div {
-      p{
-        padding: 100px 50px;
+      .home-text{
+        padding: 150px 50px;
       }
     }
   }
@@ -187,5 +191,58 @@
     .carousel-inner {
       width: 95%;
     }
+  }
+}
+//about us
+.banner {
+  position: relative;
+  height: 400px;
+  background-position:bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  .banner-title {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: -29px;
+  }
+  h1 {
+    font-size: 140px;
+    line-height: 140px;
+    font-family: 'raleway';
+  }
+}
+.about-banner {
+  background-image: url('homepage_carousel/two.jpg');
+
+}
+
+.about-us-intro {
+  h1 {
+    margin: 50px;
+    font-size: 3.6em;
+  }
+  p {
+    margin-left: 50px;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+    text-align: justify;
+  }
+}
+.quality-assurance-intro {
+  background-color: #e8e1d5;
+  h1 {
+    margin: 50px;
+    font-size: 3.6em;
+  }
+  p {
+    margin-left: 50px;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+  }
+  img{
+    width:100%;
+    max-width: 150px;
   }
 }

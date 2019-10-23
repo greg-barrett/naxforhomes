@@ -1,8 +1,40 @@
-<h1><%= @project.name %></h1>
-<h2><%= @project.location %></h2>
-<h2><%= @project.description %></h2>
-<h2><%= @project.ptype %></h2>
-<% @project.images.each do |image| %>
-  <%= image_tag image %>
-<% end %>
-<%= link_to "Edit", edit_project_path(@project) %>
+<section class="row">
+  <section id="project-show-carousel" class="col carousel slide" data-ride="carouse" data-interval="7000" data-wrap="true">
+    <div class="carousel-inner project-car-section-show">
+      <% @count=0 %>
+      <% @project.images.each do |image| %>
+
+        <div class="carousel-item car-project-sw <%= active(@count) %>" style="background-image: url(<%= rails_blob_url(image) %>)">
+        </div>
+        <% @count+=1 %>
+      <% end %>
+      <% @count=0 %>
+    </div>
+    <div class="project-data-sw">
+      <h2 class="name"><%= @project.name %></h2>
+      <p><span class="project-label"><%= t 'projects.project_type' %></span> <%= @project.ptype %></p>
+      <p><span class="project-label"><%= t 'projects.location' %></span> <%= @project.location %></p>
+      <div class="controlls-div">
+        <a class="p-controls" href="#project-show-carousel" role="button" data-slide="prev">
+          <%= image_tag "arrow-left.png", class:"arrows" %>
+        </a>
+        <a class="p-controls" href="#project-show-carousel" role="button" data-slide="next">
+          <%= image_tag "arrow-right.png", class:"arrows" %>
+        </a>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="row">
+  <% @project.features.each do |feature| %>
+  <section class="feature-section">
+    <div class="feature-image-div" style="background-image: url(<%= rails_blob_url(feature.image) %>)">
+    </div>
+    <div class="feature-text-div <%= place_it(@count) %>">
+      <% @count+=1 %>
+      <p><%= capify(feature.description) %></p>
+    </div>
+  </section>
+  <% end %>
+  <% @count=0 %>
+</section>

@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  before_action :authenticate_admin!, only: [:edit, :update, :destroy, :edit_project_images, :delete_project_image, :delete_images]
+  before_action :authenticate_admin!, only: [:new, :create, :edit, :update, :destroy, :edit_project_images, :delete_project_image, :delete_images]
 
   def new
     @project=Project.new
