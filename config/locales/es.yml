@@ -48,12 +48,27 @@ es:
         phrase: "Asóciese con Diseñadores y Arquitectos de Vanguardia"
       three:
         title: "Calidad Asegurada"
-        phrase: "Descargar Politica de Calidad"
+        phrase: "Politica de Calidad"
     where_intro: "Desde nuestra oficina central en Málaga, nuestro equipo está bien ubicado para gestionar su proyecto en Marbella y sus alrededores.."
     legal_notice: "Aviso Legal"
     privacy: "Privacidad"
   projects:
     project_type: "Tipo de Proyecto"
     location: "Ubicación"
-  construction: "Edification"
-  reform: "Reforma"
+  location:
+    where: "Dónde"
+    description: "SpanishFrom our office in Malaga we are well positioned to manage projects accross the province. From our office in Malaga we are well positioned to manage projects accross the province. From our office in Malaga we are well positioned to manage projects accross the province. From our office in Malaga we are well positioned to manage projects accross the province. See our map of recent works below"
+  legal:
+    title: "Calidad Asegurada"
+    text: "Spanish NAXFOR‘s mission is to generate value within economic, social and environmentally sustainable parameters, meeting the specific needs of our customers, the company’s employees and all stakeholders with an interest in the company’s success.To fulfil its mission, NAXFOR accommodates and manages environments to improve people’s quality of life."
+    policy: "Politica de Calidad"
+  contact:
+    title: "Contáctenos"
+    address: "Dirección"
+    form:
+      name: "Nombre"
+      company: "Empresa"
+      number: "Teléfono"
+      email: "Email"
+      message: "Mensaje"
+      submit: "Enviar"

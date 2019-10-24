@@ -196,7 +196,7 @@
 //about us
 .banner {
   position: relative;
-  height: 400px;
+  height: 500px;
   background-position:bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -219,17 +219,36 @@
 }
 
 .about-us-intro {
+  .p-spacer {
+    margin-bottom: 50px;
+  }
+  margin: 50px 0;
   h1 {
     margin: 50px;
     font-size: 3.6em;
   }
   p {
-    margin-left: 50px;
+    margin: 0 50px 0px 50px;
     font-size: 1.2em;
-    margin-bottom: 50px;
     text-align: justify;
   }
+  .about-bullets-section {
+    margin: 0 50px 0 30px;
+    .about-bullets {
+      display: inline-block;
+      text-align: justify;
+      ol {
+        line-height: 2em;
+      }
+      li {
+        font-size: 1.1em;
+        line-height: 2em;
+        list-style-type: disc;
+      }
+    }
+  }
 }
+
 .quality-assurance-intro {
   background-color: #e8e1d5;
   h1 {
@@ -237,12 +256,103 @@
     font-size: 3.6em;
   }
   p {
-    margin-left: 50px;
+    margin: 0 50px;
     font-size: 1.2em;
     margin-bottom: 50px;
+  }
+  .downloads {
+    margin: 0 0 50px 0;
+    .lefts {
+      img {
+        float: left;
+      }
+
+    }
+    .rights {
+      img {
+        float: right;
+      }
+    }
   }
   img{
     width:100%;
     max-width: 150px;
+    margin: 15px 0;
+    transition: opacity .1s ease-in-out;
   }
+  img:hover {
+    opacity: .8;
+  }
+  #q-a-policy {
+    text-align: center;
+    transition: opacity .1s ease-in-out;
+    p {
+      padding-top: 45px;
+      margin: 0;
+      font-size: 1.1em;
+    }
+    width: 150px;
+    height: 146px;
+    background-color: white;
+    margin: 15px 0;
+    float: left;
+  }
+  #q-a-policy:hover {
+    opacity: .8;
+  }
+}
+.social-img-div {
+  text-align: center;
+  margin: 0 0 30px 0;
+  img {
+    display: inline-block;
+    max-width: 250px;
+  }
+}
+.contact-text {
+  p{
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: 5px 50px 5px 80px;
+  }
+}
+
+.contact-us-form-area {
+  form {
+    padding: 0 50px;
+  }
+}
+#nax-btn {
+  background-color: #e8e1d5;
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  opacity: .8;
+}
+#nax-btn:hover {
+  opacity: 1;
+}
+@media only screen and (min-width: 991px) {
+  .quality-assurance-intro {
+    .downloads {
+      margin: 50px 0;
+    }
+  }
+  .social-img-div {
+    margin: 70px 0 0px 0;
+  }
+  .about-us-intro {
+    .about-bullets-section {
+      text-align: center;
+      margin: 0;
+    }
+    .about-bullets {
+      margin-top: 90px;
+    }
+  }
+.qa-spacer {
+  margin-top: 50px;
+}
+
 }

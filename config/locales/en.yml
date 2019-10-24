@@ -55,7 +55,20 @@ en:
   projects:
     project_type: "Project Type"
     location: "Location"
-
-
-  construction: "Construction"
-  reform: "Reform"
+  location:
+    where: "Where"
+    description: "From our office in Malaga we are well positioned to manage projects accross the province. From our office in Malaga we are well positioned to manage projects accross the province. From our office in Malaga we are well positioned to manage projects accross the province. From our office in Malaga we are well positioned to manage projects accross the province. See our map of recent works below"
+  legal:
+    title: "Quality Assured"
+    text: "NAXFOR‘s mission is to generate value within economic, social and environmentally sustainable parameters, meeting the specific needs of our customers, the company’s employees and all stakeholders with an interest in the company’s success.To fulfil its mission, NAXFOR accommodates and manages environments to improve people’s quality of life."
+    policy: "Quality Assurance Policy"
+  contact:
+    title: "Contact Us"
+    address: "Address"
+    form:
+      name: "Name"
+      company: "Company"
+      number: "Phone Number"
+      email: "Email"
+      message: "Message"
+      submit: "Send"

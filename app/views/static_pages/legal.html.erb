@@ -1,3 +1,34 @@
 <div class="spacer"></div>
-<h1>StaticPages#legal</h1>
-<p>Find me in app/views/static_pages/legal.html.erb</p>
+<section class="row about-banner banner">
+
+</section>
+<section class="row quality-assurance-intro qa-spacer">
+    <div class="col-lg-6 align-self-center">
+      <h1><%= t 'legal.title' %></h1>
+      <p><%= t 'legal.text' %></p>
+    </div>
+    <div class="col-lg-6 downloads align-self-center">
+      <div class="row">
+        <div class="col-6 rights">
+          <%= link_to downloads_isoone_path do %>
+            <%= image_tag ("safety/ISO9001.png") %>
+          <% end %>
+        </div>
+        <div class="col-6 lefts">
+          <%= link_to downloads_isotwo_path do %>
+            <%= image_tag ("safety/ISO14001.png") %>
+          <% end %>
+        </div>
+        <div class="col-6 rights">
+          <%= link_to downloads_isothree_path do %>
+            <%= image_tag ("safety/ISO45001.jpg") %>
+          <% end %>
+       </div>
+        <div class="col-6 lefts align-self-center">
+          <%= link_to downloads_quality_path do %>
+            <div id="q-a-policy"><p>Quality Assurance</br> Policy</p></div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+</section>

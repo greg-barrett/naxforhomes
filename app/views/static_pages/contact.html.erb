@@ -1,3 +1,21 @@
 <div class="spacer"></div>
-<h1>StaticPages#contact</h1>
-<p>Find me in app/views/static_pages/contact.html.erb</p>
+<section class="row about-banner banner">
+
+</section>
+<section class="row about-us-intro">
+  <div class="col-lg-6 align-self-center contact-us-form-area">
+    <h1><%= t 'contact.title' %></h1>
+    <%= render "shared/contact_form" %>
+  </div>
+  <div class="col-lg-6 contact-text">
+    <h1><%= t 'contact.address' %></h1>
+    <p>C/ Cuevas Bajas 2</p>
+    <p>Edificio Picasso</p>
+    <p>Planta 1 Of. 14</p>
+    <p>29004</p>
+    <p>Málaga</p>
+    </br>
+    <p>Tel + 34 951 917 824</p>
+    <p>Fax 952 004 626</p>
+  </div>
+</section>

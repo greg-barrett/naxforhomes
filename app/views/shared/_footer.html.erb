@@ -21,15 +21,21 @@
     </div>
 
     <div class="safety data col-lg-4">
+      <%= link_to downloads_isoone_path do %>
         <%= image_tag ("safety/ISO9001.png") %>
+      <% end %>
+      <%= link_to downloads_isotwo_path do %>
         <%= image_tag ("safety/ISO14001.png") %>
+      <% end %>
+      <%= link_to downloads_isothree_path do %>
         <%= image_tag ("safety/ISO45001.jpg") %>
+      <% end %>
     </div>
 </section>
 <section class="row">
   <div class="col fade-links">
     <p>Copyright 2019 Naxfor Homes</p><span>|</span>
-    <p><%= t 'home.legal_notice' %></p><span>|</span>
-    <p><%= t 'home.privacy' %></p>
+    <p><%= link_to t('home.legal_notice'), legal_advisory_path %></p><span>|</span>
+    <p><%= link_to t('home.privacy'), privacy_path %></p>
   </div>
 </section>
