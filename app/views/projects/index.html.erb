@@ -13,6 +13,9 @@
           <h1><%= project.name %><%= image_tag "right.png", class:"right-arrow right-arrow-index" %></h1>
         <% end %>
         <p class="project-text"><%= project.description %></p>
+        <% if admin_signed_in? %>
+          <p class= "edit-link"><%= link_to "Edit", edit_project_path(project) %></p>
+        <% end %>
         <h3 class="fade-header"><%= project.location %></h3>
       </div>
   </section>

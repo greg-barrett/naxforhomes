@@ -37,5 +37,10 @@
     <p>Copyright 2019 Naxfor Homes</p><span>|</span>
     <p><%= link_to t('home.legal_notice'), legal_advisory_path %></p><span>|</span>
     <p><%= link_to t('home.privacy'), privacy_path %></p>
+    <% if admin_signed_in? %>
+      <span>|</span><p><%= link_to 'Logout', destroy_admin_session_path, method: :delete %></p>
+    <% else %>
+      <span>|</span><p><%= link_to 'Sign in', new_admin_session_path %></p>
+    <% end %>
   </div>
 </section>

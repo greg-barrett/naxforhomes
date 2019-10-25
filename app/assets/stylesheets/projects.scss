@@ -123,6 +123,10 @@
 .right-arrow-index {
   vertical-align: initial;
 }
+.edit-link {
+  font-size: 1.2em;
+  padding-left: 20px;
+}
 @media only screen and (min-width: 991px) {
   .project-index-text {
     padding-top: 100px;
@@ -130,5 +134,10 @@
     .project-text {
       padding: 25px 40px 0 40px;
     }
+  }
+  .edit-link {
+    text-align: right;
+    font-size: 1.2em;
+    padding: 0 40px 0 0;
   }
 }
