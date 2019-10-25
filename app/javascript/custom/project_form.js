@@ -14,7 +14,18 @@ document.addEventListener("turbolinks:load", function() {
     imgInput.setAttribute('type', 'file')
     imgInput.setAttribute('name', 'project[features_attributes]['+ index + '][image]')
     imgInput.id="project_features_attributes_" + index + "_image";
+    imgInput.classList.add("form-control-file")
     console.log(imgInput)
+
+    var groupOne=document.createElement("div")
+    groupOne.classList.add("form-group")
+    groupOne.appendChild(imgLabel)
+    groupOne.appendChild(imgInput)
+
+    var lefty=document.createElement("div")
+    lefty.classList.add("feature-preview-container", "col-lg-4")
+    lefty.appendChild(groupOne)
+
 
     var descriptionLabel=document.createElement("label");
     descriptionLabel.htmlFor="project_features_attributes_" + index + "_description"
@@ -25,23 +36,31 @@ document.addEventListener("turbolinks:load", function() {
     descriptionInput.setAttribute('type', 'text')
     descriptionInput.setAttribute('name', 'project[features_attributes]['+ index + '][description]')
     descriptionInput.id="project_features_attributes_" + index + "_description";
+    descriptionInput.classList.add("form-control")
+
+    var groupTwo=document.createElement("div")
+    groupTwo.classList.add("form-group")
+    groupTwo.appendChild(descriptionLabel)
+    groupTwo.appendChild(descriptionInput)
+
+    var righty=document.createElement("div")
+    righty.classList.add("align-self-center", "col-lg-8")
+    righty.appendChild(groupTwo)
+
     console.log(descriptionInput)
 
     //add fields to a div
     var featureFieldsDiv=document.createElement("div")
-    featureFieldsDiv.classList.add("feature-fields")
-    var featureFields=[imgLabel, imgInput, descriptionLabel, descriptionInput];
-    featureFields.forEach( (item) => featureFieldsDiv.appendChild(item))
+    featureFieldsDiv.classList.add("row", "feature-previews")
+    var cols=[lefty, righty];
+    cols.forEach( (item) => featureFieldsDiv.appendChild(item))
     console.log(featureFieldsDiv)
 
-    //add div to the page
-    var featureDiv= document.getElementById("features");
-    featureDiv.appendChild(featureFieldsDiv)
-
-
-
+    var featurePreviews=document.getElementsByClassName("feature-previews")
+    console.log(featurePreviews)
+    var ref=featurePreviews[featurePreviews.length -1]
+    ref.parentNode.insertBefore(featureFieldsDiv, ref.nextSibling )
   }
-
 
   //get the button
   var newFeatureBtn= document.getElementById("new-feature");

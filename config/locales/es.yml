@@ -55,6 +55,8 @@ es:
   projects:
     project_type: "Tipo de Proyecto"
     location: "Ubicación"
+    construction: "Construcción"
+    reform: "Reforma"
   location:
     where: "Dónde"
     description: "SpanishFrom our office in Malaga we are well positioned to manage projects accross the province. From our office in Malaga we are well positioned to manage projects accross the province. From our office in Malaga we are well positioned to manage projects accross the province. From our office in Malaga we are well positioned to manage projects accross the province. See our map of recent works below"

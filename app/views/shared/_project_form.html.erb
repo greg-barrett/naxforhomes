@@ -1,54 +1,86 @@
+<div class="spacer"></div>
+
 <%= form_with model: @project do |f| %>
-  <%= f.label :name  %>
-  <%= f.text_field :name  %>
-  <%= f.label :location %>
-  <%= f.text_field :location %>
-  <%= f.label :description %>
-  <%= f.text_field :description %>
-  <%= f.label :type %>
-  <%= f.select :ptype , [[t('reform'), t('reform')], [t('construction'), t('construction') ]] %>
+  <div class="row justify-content-cent">
+    <div class="col devise-form-spacer">
+      <div class="form-group">
+        <%= f.label :name  %>
+        <%= f.text_field :name, class:"form-control"  %>
+      </div>
+      <div class="form-group">
+        <%= f.label :location %>
+        <%= f.text_field :location, class:"form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :description %>
+        <%= f.text_field :description, class:"form-control" %>
+      </div>
+      <div class="form-group">
+        <%= f.label :type %>
+        <%= f.select :ptype, [[t('projects.reform'), t('projects.reform')], [t('projects.construction'), t('projects.construction') ]], {}, {class: "form-control"} %>
+      </div>
+      <div class="form-group">
+        <%= f.label :add_carousel_images %>
+        <%= f.file_field :images, multiple: true, class:"form-control-file" %>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col project-form-spacer">
+      <% if f.object.images.attached? %>
+        <h2>Current Carousel Images</h2>
+        <p>To remove an image from the carousel, check the delete box before you submit the form</p>
+        <div class="carousel-images-display row">
+          <% f.object.images.each do |image| %>
+            <div class="col-md-4 carousel-images-display-container">
+              <div class="carousel-image-preview" style="background-image: url(<%= rails_blob_url(image) %>)"></div>
+              <div class="form-group form-check">
+                <%= check_box_tag("[image_ids][#{image.id}]", 1, false, { class:"form-check-input"}) %>
+                <%= label_tag("[image_ids][#{image.id}]", "Delete", class:"form-check-label") %>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
 
-
-  <%= f.label :images %>
-  <%= f.file_field :images, multiple: true %>
-
-  <% if f.object.images %>
-  <% f.object.images.each do |image| %>
-    <%= image_tag image %>
-    <%= check_box_tag("[image_ids][#{image.id}]") %>
-    <%= label_tag("[image_ids][#{image.id}]", "Delete") %>
-
-  <% end %>
-  <% else %>
-    <%= feature.label :image %>
-    <%= feature.file_field :image %>
-  <% end %>
-    <div id="features">
-      <button id="new-feature" type="button">Add feature</button>
-
+  <div class="row justify-content-center">
+    <div class="col project-form-spacer">
+      <h2> Features</h2>
+      <p>Here you can add new features or edit existing ones</p>
         <%= f.fields_for :features do |feature| %>
-          <div class="feature-fields">
-
-            <% if feature.object.image %>
-              <%= image_tag feature.object.image %>
+        <div class="row feature-previews">
+          <div class="feature-preview-container col-lg-4">
+            <% if feature.object.image.attached? %>
+                <div class="feature-image-preview" style="background-image: url(<%= rails_blob_url(feature.object.image) %>)"></div>
             <% else %>
-              <%= feature.label :image %>
-              <%= feature.file_field :image %>
+              <div class="form-group">
+                <%= feature.label :image %>
+                <%= feature.file_field :image, class:"form-control-file" %>
+              </div>
             <% end %>
-
-
-            <%= feature.label :description %>
-            <%= feature.text_field :description %>
-            <%= feature.label :delete %>
-            <%= feature.check_box :_destroy %>
-
+            </div>
+            <div class="col-lg-8 align-self-center">
+              <div class="form-group">
+                <%= feature.label :description %>
+                <%= feature.text_field :description, class: "form-control" %>
+              </div>
+              <div class="form-group form-check">
+                <%= feature.check_box :_destroy, :class => "form-check-input" %>
+                <%= feature.label :delete, class: "form-check-label" %>
+              </div>
+            </div>
           </div>
         <% end  %>
+        <div id="features" class="col"></div>
+        <button id="new-feature" class="" type="button">Add feature</button>
+
       </div>
-
     </div>
-
-
-
-  <%= f.submit %>
+  <div class="row justify-content-center">
+    <div class="form-group">
+      <%= f.submit id:"nax-btn" %>
+    </div>
+  </div>
 <% end  %>

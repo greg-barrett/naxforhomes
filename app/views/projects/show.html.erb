@@ -2,13 +2,13 @@
   <section id="project-show-carousel" class="col carousel slide" data-ride="carouse" data-interval="7000" data-wrap="true">
     <div class="carousel-inner project-car-section-show">
       <% @count=0 %>
-      <% @project.images.each do |image| %>
-
-        <div class="carousel-item car-project-sw <%= active(@count) %>" style="background-image: url(<%= rails_blob_url(image) %>)">
-        </div>
-        <% @count+=1 %>
+      <% if @project.images.attached? %>
+        <% @project.images.each do |image| %>
+          <div class="carousel-item car-project-sw <%= active(@count) %>" style="background-image: url(<%= rails_blob_url(image) %>)"></div>
+          <% @count+=1 %>
+        <% end %>
+        <% @count=0 %>
       <% end %>
-      <% @count=0 %>
     </div>
     <div class="project-data-sw">
       <h2 class="name"><%= @project.name %></h2>
@@ -26,15 +26,16 @@
   </section>
 </section>
 <section class="row">
-  <% @project.features.each do |feature| %>
-  <section class="feature-section">
-    <div class="feature-image-div" style="background-image: url(<%= rails_blob_url(feature.image) %>)">
-    </div>
-    <div class="feature-text-div <%= place_it(@count) %>">
-      <% @count+=1 %>
-      <p><%= capify(feature.description) %></p>
-    </div>
-  </section>
+  <% if @project.features.count > 0 %>
+    <% @project.features.each do |feature| %>
+    <section class="feature-section">
+      <div class="feature-image-div" style="background-image: url(<%= rails_blob_url(feature.image) if feature.image.attached? %>)"></div>
+      <div class="feature-text-div <%= place_it(@count) %>">
+        <% @count+=1 %>
+        <p><%= capify(feature.description) %></p>
+      </div>
+    </section>
+    <% end %>
+    <% @count=0 %>
   <% end %>
-  <% @count=0 %>
 </section>
