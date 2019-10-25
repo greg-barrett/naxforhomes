@@ -51,7 +51,7 @@ document.addEventListener("turbolinks:load", function() {
 
     //add fields to a div
     var featureFieldsDiv=document.createElement("div")
-    featureFieldsDiv.classList.add("row", "feature-previews")
+    featureFieldsDiv.classList.add("row", "feature-previews", "f-p-style")
     var cols=[lefty, righty];
     cols.forEach( (item) => featureFieldsDiv.appendChild(item))
     console.log(featureFieldsDiv)

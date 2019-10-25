@@ -49,8 +49,9 @@
     <div class="col project-form-spacer">
       <h2> Features</h2>
       <p>Here you can add new features or edit existing ones</p>
+      <div class="feature-previews"></div>
         <%= f.fields_for :features do |feature| %>
-        <div class="row feature-previews">
+        <div class="row feature-previews f-p-style">
           <div class="feature-preview-container col-lg-4">
             <% if feature.object.image.attached? %>
                 <div class="feature-image-preview" style="background-image: url(<%= rails_blob_url(feature.object.image) %>)"></div>
