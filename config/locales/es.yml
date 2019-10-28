@@ -67,6 +67,8 @@ es:
   contact:
     title: "Contáctenos"
     address: "Dirección"
+    thanks: "Gracias"
+    thanks_message: "Gracias por contactarnos. Nos pondremos en contacto con usted lo antes posible."
     form:
       name: "Nombre"
       company: "Empresa"

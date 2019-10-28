@@ -67,6 +67,8 @@ en:
   contact:
     title: "Contact Us"
     address: "Address"
+    thanks: "Thanks"
+    thanks_message: "Thank you for getting in touch. We will get back to you asn soon as we can."
     form:
       name: "Name"
       company: "Company"

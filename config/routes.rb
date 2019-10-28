@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'static_pages/where', to: 'static_pages#where', as: 'where'
   get 'static_pages/legal', to: 'static_pages#legal', as: 'legal'
   get 'static_pages/contact', to: 'static_pages#contact', as: 'contact'
+  get 'static_pages/submitted', to: 'static_pages#submitted', as: 'submitted'
   get 'static_pages/privacy', to: 'static_pages#privacy', as: 'privacy'
   get 'static_pages/legal_advisory', to: 'static_pages#legal_advisory', as: 'legal_advisory'
   resources :projects

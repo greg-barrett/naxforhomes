@@ -31,51 +31,31 @@
       </div>
   </section>
 
-  <section class="row">
-    <section id="projcts-home-car" class="col-lg-12 carousel slide" data-ride="carouse" data-interval="7000" data-wrap="true">
-      <div class="carousel-inner project-car-section">
+  <% if @projects %>
+    <section class="row">
+      <section id="projcts-home-car" class="col-lg-12 carousel slide" data-ride="carouse" data-interval="7000" data-wrap="true">
+        <div class="carousel-inner project-car-section">
+          <% @count=0 %>
+          <% @projects.each do |project| %>
+            <div class="carousel-item car-project-hm <%= active(@count) %>" style="background-image: url(<%= rails_blob_url(project.images.first) %>)">
+              <div class="project-data">
+                <h2 class="name"><%= project.name %> <%= image_tag "right.png", class:"right-arrow" %></h2>
+                <a class="p-controls" href="#projcts-home-car" role="button" data-slide="next">
+                  <%= image_tag "arrow-right.png", class:"arrows" %>
+                </a>
+                <a class="p-controls" href="#projcts-home-car" role="button" data-slide="prev">
+                  <%= image_tag "arrow-left.png", class:"arrows" %>
+                </a>
+              </div>
+            </div>
+            <% @count+=1 %>
+          <% end %>
+          <% @count=0 %>
+        </section>
+    </section>
+  <% end %>
 
-        <div class="carousel-item car-project-hm active" id="slide-one">
-          <div class="project-data">
-            <h2 class="name">Project Name 1 <%= image_tag "right.png", class:"right-arrow" %></h2>
-            <a class="p-controls" href="#projcts-home-car" role="button" data-slide="next">
-              <%= image_tag "arrow-right.png", class:"arrows" %>
-            </a>
-            <a class="p-controls" href="#projcts-home-car" role="button" data-slide="prev">
-              <%= image_tag "arrow-left.png", class:"arrows" %>
-            </a>
-          </div>
-        </div>
-
-        <div class="carousel-item car-project-hm" id="slide-two">
-          <div class="project-data">
-            <h2 class="name">Project Name 2 <%= image_tag "right.png", class:"right-arrow" %></h2>
-            <a class="p-controls" href="#projcts-home-car" role="button" data-slide="next">
-              <%= image_tag "arrow-right.png", class:"arrows" %>
-            </a>
-            <a class="p-controls" href="#projcts-home-car" role="button" data-slide="prev">
-              <%= image_tag "arrow-left.png", class:"arrows" %>
-            </a>
-          </div>
-        </div>
-
-        <div class="carousel-item car-project-hm" id="slide-three">
-          <div class="project-data">
-            <h2 class="name">Project Name 3 <%= image_tag "right.png", class:"right-arrow" %></h2>
-            <a class="p-controls" href="#projcts-home-car" role="button" data-slide="next">
-              <%= image_tag "arrow-right.png", class:"arrows" %>
-            </a>
-            <a class="p-controls" href="#projcts-home-car" role="button" data-slide="prev">
-              <%= image_tag "arrow-left.png", class:"arrows" %>
-            </a>
-          </div>
-        </div>
-
-      </div>
-      </section>
-  </section>
-
-  <section class="confidence row">
+  <section class="confidence row align-self-center">
     <div class="stats col-lg-4">
       <h4><%= t 'home.stats.one.title' %></h4>
       <p><%= t 'home.stats.one.phrase' %></p>

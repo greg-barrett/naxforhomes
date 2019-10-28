@@ -1,5 +1,7 @@
-<form action="https://#mailthis.to/gbarrett15@gmail.com" method="POST">
-
+<form action="https://mailthis.to/gb15" method="POST">
+  <input type="hidden" name="_subject" value="Presentación de nuevos formularios en Naxfor Homes">
+  <input type="hidden" name="_after" value=<%= submitted_url %> >
+  <input type="hidden" name="_honeypot" >
      <div class="form-group">
        <label for="name"><%= t 'contact.form.name'%></label>
        <input class="form-control" type="text" name="name">
@@ -22,6 +24,6 @@
         <textarea class="form-control" type="text" name="message"></textarea>
       </div>
 
-      <button type="submit" id="nax-btn"><%= t 'contact.form.submit'%></button>
+      <button type="submit" id="nax-btn" class="contact-btn"><%= t 'contact.form.submit'%></button>
 
 </form>

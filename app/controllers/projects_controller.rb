@@ -14,7 +14,7 @@ class ProjectsController < ApplicationController
   end
 
   def index
-    @projects=Project.all
+    @projects= admin_signed_in? ? Project.all : Project.where(:published => true)
   end
 
   def show
@@ -51,7 +51,7 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params[:project].permit(:name, :location, :description, :ptype, features_attributes: [:id, :image, :description, :_destroy])
+    params[:project].permit(:name, :location, :description, :ptype, :featured, :published, features_attributes: [:id, :image, :description, :_destroy])
   end
 
 end

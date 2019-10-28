@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
+    @projects=Project.where(:featured => true, :published => true)
   end
 
   def about
@@ -12,5 +13,8 @@ class StaticPagesController < ApplicationController
   end
 
   def contact
+  end
+
+  def submitted
   end
 end
