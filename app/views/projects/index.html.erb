@@ -10,12 +10,13 @@
 
       <div class="home-about-txt-div col-lg-4 project-index-text">
         <%= link_to project_path(project) do %>
-          <h1><%= project.name %><%= image_tag "right.png", class:"right-arrow right-arrow-index" %></h1>
+          <h1><%= project.name %></h1>
+          <p class="project-text"><%= project.description %><%= image_tag "right.png", class:"right-arrow" %></p>
         <% end %>
-        <p class="project-text"><%= project.description %></p>
         <% if admin_signed_in? %>
           <p class= "edit-link"><%= link_to "Edit", edit_project_path(project) %></p>
-        <% end %>
+          <p class= "edit-link"><%= link_to 'Destroy', project_path(project), data: {:confirm => 'Are you sure?'}, :method => :delete %>
+        <% end %></p>
         <h3 class="fade-header"><%= project.location %></h3>
       </div>
   </section>

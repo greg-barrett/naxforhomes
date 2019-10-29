@@ -5,21 +5,16 @@
 <section class="row about-us-intro">
     <div class="col-lg-6">
       <h1>Naxfor Homes</h1>
-      <p class="p-spacer">NAXFOR‘s mission is to generate value within economic,
-         social and environmentally sustainable parameters,
-          meeting the specific needs of our customers, the company’s
-           employees and all stakeholders with an interest in the company’s
-            success."To fulfil its mission, NAXFOR accommodates and manages
-             environments to improve people’s quality of life.
+      <p class="p-spacer"><%= t 'about.intro'%>
       </p>
     </div>
 
     <div class="col-lg-6 align-self-center about-bullets-section">
       <div class="about-bullets">
         <ol>
-          <li>Experts in Engineering, Construction and Reforms</li>
-          <li>Over 20 years of experience in the sector</li>
-          <li>Technically Qualified and Socially Responsible Staff</li>
+          <li><%= t 'about.bullets.one' %></li>
+          <li><%= t 'about.bullets.two' %></li>
+          <li><%= t 'about.bullets.three' %></li>
         </ol>
       </div>
     </div>
@@ -27,14 +22,8 @@
 
 <section class="row quality-assurance-intro">
     <div class="col-lg-6 align-self-center">
-      <h1> Quality Assured</h1>
-      <p>NAXFOR‘s mission is to generate value within economic,
-         social and environmentally sustainable parameters,
-          meeting the specific needs of our customers, the company’s
-           employees and all stakeholders with an interest in the company’s
-            success."To fulfil its mission, NAXFOR accommodates and manages
-             environments to improve people’s quality of life.
-      </p>
+      <h1><%= t 'about.quality.title' %></h1>
+      <p><%= t 'about.quality.text' %></p>
     </div>
     <div class="col-lg-6 downloads align-self-center">
       <div class="row">
@@ -55,7 +44,7 @@
        </div>
         <div class="col-6 lefts align-self-center">
           <%= link_to downloads_quality_path do %>
-            <div id="q-a-policy"><p>Quality Assurance</br> Policy</p></div>
+            <%= image_tag ("safety/#{t 'about.qa_policy'}") %>
           <% end %>
         </div>
       </div>
@@ -64,14 +53,8 @@
 
 <section class="row about-us-intro">
     <div class="col-lg-6 align-self-center">
-      <h1>Socially Responsible</h1>
-      <p class="p-spacer">The NAXFOR management team seeks to establish a balance between business
-         efficiency and the social principles of democracy, self-reliance, community
-          support and a fair economic distribution. To achieve this, NAXFOR is working
-           to improve its employees’ expertise, to minimise its environmental impact,
-           to boost its cooperation with the wellbeing and development of the community
-            and to ensure its sales process is socially responsible.
-      </p>
+      <h1><%= t 'about.social.title' %></h1>
+      <p class="p-spacer"><%= t 'about.social.text' %></p>
     </div>
 
     <div class="col-lg-6 align-self-center">

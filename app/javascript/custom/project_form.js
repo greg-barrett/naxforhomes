@@ -13,6 +13,7 @@ document.addEventListener("turbolinks:load", function() {
     var imgInput=document.createElement("input");
     imgInput.setAttribute('type', 'file')
     imgInput.setAttribute('name', 'project[features_attributes]['+ index + '][image]')
+    imgInput.setAttribute('required', true)
     imgInput.id="project_features_attributes_" + index + "_image";
     imgInput.classList.add("form-control-file")
     console.log(imgInput)
@@ -34,6 +35,7 @@ document.addEventListener("turbolinks:load", function() {
 
     var descriptionInput=document.createElement("input");
     descriptionInput.setAttribute('type', 'text')
+    descriptionInput.setAttribute('required', true)
     descriptionInput.setAttribute('name', 'project[features_attributes]['+ index + '][description]')
     descriptionInput.id="project_features_attributes_" + index + "_description";
     descriptionInput.classList.add("form-control")
@@ -48,10 +50,20 @@ document.addEventListener("turbolinks:load", function() {
     righty.appendChild(groupTwo)
 
     console.log(descriptionInput)
+    var closerCon=document.createElement("div")
+    var closer=document.createElement("div")
+    closerCon.appendChild(closer)
+    closerCon.classList.add("closer")
+    let removeFeature = function () {
+      this.parentElement.parentElement.remove()
+    }
+    closer.addEventListener("click", removeFeature)
+
 
     //add fields to a div
     var featureFieldsDiv=document.createElement("div")
     featureFieldsDiv.classList.add("row", "feature-previews", "f-p-style")
+    featureFieldsDiv.appendChild(closerCon)
     var cols=[lefty, righty];
     cols.forEach( (item) => featureFieldsDiv.appendChild(item))
     console.log(featureFieldsDiv)

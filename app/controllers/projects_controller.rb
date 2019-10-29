@@ -6,11 +6,17 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project =Project.create(project_params)
+    @project =Project.new(project_params)
     if params[:project][:images]
       @project.images.attach(params[:project][:images])
     end
-    redirect_to @project
+
+    if @project.save
+      flash[:notice]= "The Project was Successfully created"
+      redirect_to @project
+    else
+      render 'new'
+    end
   end
 
   def index
@@ -28,23 +34,26 @@ class ProjectsController < ApplicationController
 
   def update
     @project=Project.find(params[:id])
-    @project.update(project_params)
-    if params[:project][:images]
-      @project.images.attach(params[:project][:images])
-    end
-    #delete unwanted images from project within edit
-    if params[:image_ids]
-      params[:image_ids].each do |key, value|
-        @image = ActiveStorage::Attachment.find(key)
-        @image.purge
+    if @project.update(project_params)
+      if params[:project][:images]
+        @project.images.attach(params[:project][:images])
       end
+      #delete unwanted images from project within edit
+      if params[:image_ids]
+        params[:image_ids].each do |key, value|
+          @image = ActiveStorage::Attachment.find(key)
+          @image.purge
+        end
+      end
+      redirect_to @project
+    else
+      render 'edit'
     end
-    redirect_to @project
   end
 
   def destroy
     @project=Project.find(params[:id]).destroy
-    redirect_to root_url
+    redirect_to projects_url
   end
 
 

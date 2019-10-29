@@ -39,7 +39,9 @@
           <% @projects.each do |project| %>
             <div class="carousel-item car-project-hm <%= active(@count) %>" style="background-image: url(<%= rails_blob_url(project.images.first) %>)">
               <div class="project-data">
-                <h2 class="name"><%= project.name %> <%= image_tag "right.png", class:"right-arrow" %></h2>
+                <%= link_to projects_path(@project) do %>
+                  <h2 class="name"><%= project.name %> <%= image_tag "right.png", class:"right-arrow" %></h2>
+                  <% end %>
                 <a class="p-controls" href="#projcts-home-car" role="button" data-slide="next">
                   <%= image_tag "arrow-right.png", class:"arrows" %>
                 </a>

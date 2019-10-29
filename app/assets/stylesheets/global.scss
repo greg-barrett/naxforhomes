@@ -3,6 +3,7 @@
 	src: url('Aileron-Thin-webfont.woff') format('woff'),
 }
 #body {
+
   font-family: 'Aileron-Thin';
 	a {
 		color: #545454;
@@ -21,4 +22,13 @@
       line-height: 140px;
     }
   }
+}
+.alert {
+	background-color: #e8e1d5 !important;
+	color: #000 !important;
+	position: absolute !important;
+	top: 100px;
+	width: 50%;
+	left: 25%;
+	z-index: 10;
 }

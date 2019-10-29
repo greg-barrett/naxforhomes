@@ -34,8 +34,11 @@ es:
     about_us: "Empresa"
     projects: "Proyectos"
     location: "Dónde"
-    legal: "Legal"
+    quality: "Calidad"
     contact: "Contacto"
+    new_project: "Nuevo Proyecto"
+  sign_in: "Registrarse"
+  sign_out: "Cerrar Sessión"
   home:
     tagline: "Creadores de casas a medida en Marbella y sus alrededores"
     about_intro: "Spanish vultum tibi, si incessum fingeres,quo gravior viderere, non esses tui similis. Laelius clamores sofòw ille so lebat Edere compellans gumias ex ordine nostros..."
@@ -59,7 +62,20 @@ es:
     reform: "Reforma"
   location:
     where: "Dónde"
-    description: "SpanishFrom our office in Malaga we are well positioned to manage projects accross the province. From our office in Malaga we are well positioned to manage projects accross the province. From our office in Malaga we are well positioned to manage projects accross the province. From our office in Malaga we are well positioned to manage projects accross the province. See our map of recent works below"
+    description: "Spanish Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+  about:
+    qa_policy: "politica_de_calidad.png"
+    intro: "Spanish Intro NAXFOR‘s mission is to generate value within economic, social and environmentally sustainable parameters, meeting the specific needs of our customers, the company’s employees and all stakeholders with an interest in the company’s success.To fulfil its mission, NAXFOR accommodates and manages environments to improve people’s quality of life."
+    bullets:
+      one: "Especialistas en Ingeniería, Construcción y Servicios"
+      two: "Equipo Humano Técnicamente Cualificado y Socialmente Comprometido"
+      three: "Más de 20 años de experiencia en el sector."
+    quality:
+      title: "Calidad Asegurada"
+      text: "Spanish Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    social:
+      title: "Responsabilidad Social"
+      text: "Spanish Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
   legal:
     title: "Calidad Asegurada"
     text: "Spanish NAXFOR‘s mission is to generate value within economic, social and environmentally sustainable parameters, meeting the specific needs of our customers, the company’s employees and all stakeholders with an interest in the company’s success.To fulfil its mission, NAXFOR accommodates and manages environments to improve people’s quality of life."

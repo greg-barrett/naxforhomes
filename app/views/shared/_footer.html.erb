@@ -30,17 +30,20 @@
       <%= link_to downloads_isothree_path do %>
         <%= image_tag ("safety/ISO45001.jpg") %>
       <% end %>
+      <%= link_to downloads_quality_path do %>
+        <%= image_tag ("safety/#{t 'about.qa_policy'}") %>
+      <% end %>
     </div>
 </section>
 <section class="row">
   <div class="col fade-links">
-    <p>Copyright 2019 Naxfor Homes</p><span>|</span>
+    <p>Copyright <%= Date.today.year %> Naxfor Homes</p><span>|</span>
     <p><%= link_to t('home.legal_notice'), legal_advisory_path %></p><span>|</span>
     <p><%= link_to t('home.privacy'), privacy_path %></p>
     <% if admin_signed_in? %>
-      <span>|</span><p><%= link_to 'Logout', destroy_admin_session_path, method: :delete %></p>
+      <span>|</span><p><%= link_to "#{t 'sign_out'}", destroy_admin_session_path, method: :delete %></p><span>|</span><%= link_to ((t 'nav.new_project')), new_project_path %>
     <% else %>
-      <span>|</span><p><%= link_to 'Sign in', new_admin_session_path %></p>
+      <span>|</span><p><%= link_to "#{t 'sign_in'}", new_admin_session_path %></p>
     <% end %>
   </div>
 </section>

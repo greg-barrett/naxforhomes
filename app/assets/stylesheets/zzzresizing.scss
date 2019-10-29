@@ -63,6 +63,10 @@
 }
 
 @media only screen and (max-width: 820px) {
+  .alert {
+    width: 90%;
+    left: 5%;
+  }
   .main-title-div {
     bottom: -17px;
     .title{
@@ -77,9 +81,32 @@
       padding: 20px 20px;
     }
   }
+  .project-car-section-show {
+    .car-project-sw {
+      height: 600px;
+      width: 100%;
+    }
+  }
+  .project-data-sw {
+    padding: 20px;
+    .name {
+      font-size: 2em;
+
+    }
+    p {
+      font-size: 1em;
+    }
+    .controlls-div {
+      right: 10px;
+      img {
+        width: 25px;
+      }
+    }
+  }
 
 }
 @media only screen and (max-width: 701px) {
+
   .image-over-section {
     .home-about-txt-div {
       .home-text{
@@ -88,8 +115,32 @@
 
     }
   }
-
+  .feature-section {
+    .feature-text-div {
+      padding: 35px 20px 30px 25px;
+      p {
+        font-size:  1em;
+      }
+    }
+  }
+  .about-us-intro {
+    h1 {
+      margin: 20px;
+      font-size: 3.6em;
+    }
+    p {
+      margin: 0 20px;
+    }
+  }
+  .contact-text {
+    p {
+      margin-left: 40px;
+    }
+  }
 }
+
+
+
 @media only screen and (max-width: 500px) {
 
   .main-title-div {
@@ -103,6 +154,9 @@
       .name {
         font-size: 1.7em;
       }
+      .right-arrow {
+        display: none;
+      }
     }
   }
   .stats {
@@ -113,8 +167,69 @@
       font-size: 1em;
     }
   }
+  .project-data-sw {
+    padding: 20px;
+    .name {
+      font-size: 2em;
 
+    }
+    p {
+      font-size: 1em;
+    }
+    .controlls-div {
+      display: none;
+    }
+  }
+  .about-us-intro {
+    h1 {
+      margin-top: 0px;
+      font-size: 2.6em;
+    }
+    p {
+      font-size: 1.1em;
+    }
+  }
+  .quality-assurance-intro {
+      h1 {
+      margin: 20px;
+      font-size: 2.6em;
+    }
+    p {
+      margin: 0 20px 20px 20px;
+      font-size: 1.1em;
+    }
+  }
+  .contact-us-form-area {
+    form {
+      padding: 0 20px 20px 20px;
+    }
+  }
+  .navbar {
+    padding: 10px 10px 0 10px !important;
+  }
+  .nav-container {
+
+  }
+  .spacer {
+    height: 65px;
+  }
+  .image-over-section{
+    .home-about-txt-div {
+      .right-arrow {
+        display: none;
+      }
+    }
+  }
+  .about-us-intro {
+    .about-bullets-section {
+      margin: 0 20px 0 20px;
+    }
+  }
 }
+
+
+
+
 
 
 @media only screen and (min-width: 991px) {
@@ -233,7 +348,7 @@
     padding-top: 100px;
 
     .project-text {
-      padding: 25px 40px 0 40px;
+      padding: 25px 40px 0 20px;
     }
   }
   .edit-link {

@@ -19,7 +19,7 @@
           <%= link_to (t 'nav.location'), where_path, class: "nav-links" %>
         </li>
         <li>
-          <%= link_to (t 'nav.legal'), legal_path, class: "nav-links" %>
+          <%= link_to (t 'nav.quality'), legal_path, class: "nav-links" %>
         </li>
         <li>
           <%= link_to (t 'nav.contact'), contact_path, class: "nav-links" %>
@@ -33,9 +33,9 @@
           <% end %>
         </div>
         <div class="lang-links-div">
-          <%= link_to 'EN', root_path(locale: :en), class: "lang-links" %>
+          <%= link_to 'EN', url_for(locale: :en), class: "lang-links" %>
           <span>|</span>
-          <%= link_to 'ES', root_path(locale: :es), class: "lang-links" %>
+          <%= link_to 'ES', url_for(locale: :es), class: "lang-links" %>
         </div>
       </ul>
     </div>

@@ -12,8 +12,13 @@
     </div>
     <div class="project-data-sw">
       <h2 class="name"><%= @project.name %></h2>
-      <p><span class="project-label"><%= t 'projects.project_type' %></span> <%= @project.ptype %></p>
-      <p><span class="project-label"><%= t 'projects.location' %></span> <%= @project.location %></p>
+      <p><span class="project-label"><%= t 'projects.project_type' %>:</span> <%= @project.ptype %></p>
+      <p><span class="project-label"><%= t 'projects.location' %>:</span> <%= @project.location %></p>
+      <% if admin_signed_in? %>
+        <p><%= link_to "Edit", edit_project_path(@project) %></p>
+        <p><%= link_to 'Destroy', project_path(@project),
+            data: {:confirm => 'Are you sure?'}, :method => :delete %>
+      <% end %></p>
       <div class="controlls-div">
         <a class="p-controls" href="#project-show-carousel" role="button" data-slide="prev">
           <%= image_tag "arrow-left.png", class:"arrows" %>
