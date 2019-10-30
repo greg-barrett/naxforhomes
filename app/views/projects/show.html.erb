@@ -4,7 +4,7 @@
       <% @count=0 %>
       <% if @project.images.attached? %>
         <% @project.images.each do |image| %>
-          <div class="carousel-item car-project-sw <%= active(@count) %>" style="background-image: url(<%= rails_blob_url(image) %>)"></div>
+          <div class="carousel-item car-project-sw <%= active(@count) %>" style="background-image: url(<%= rails_representation_url(@project.resized_images(image)) %>)"></div>
           <% @count+=1 %>
         <% end %>
         <% @count=0 %>
@@ -34,7 +34,7 @@
   <% if @project.features.count > 0 %>
     <% @project.features.each do |feature| %>
     <section class="feature-section">
-      <div class="feature-image-div" style="background-image: url(<%= rails_blob_url(feature.image) if feature.image.attached? %>)"></div>
+      <div class="feature-image-div" style="background-image: url(<%= rails_representation_url(feature.resized_image) if feature.image.attached? %>)"></div>
       <div class="feature-text-div <%= place_it(@count) %>">
         <% @count+=1 %>
         <p><%= capify(feature.description) if feature.description.present? %></p>

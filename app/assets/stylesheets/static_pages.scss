@@ -2,9 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //homepage
-#homepage-carousel {
-  margin-top: 80px;
-}
+
 .car-top {
   position: relative;
   height: 100vh;
@@ -27,6 +25,10 @@
 }
 #slide-four {
   background-image: url('homepage_carousel/four.jpg');
+
+}
+#slide-five {
+  background-image: url('homepage_carousel/five.jpg');
 
 }
 .carousel-inner{
@@ -64,6 +66,15 @@
     height: 80vh;
     #hm-abt-img {
       background-image: url('four.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:cover;
+      height: 80vh;
+      position: relative;
+      top: -15px;
+    }
+    #hm-where-img {
+      background-image: url('garden.jpg');
       background-position: center;
       background-repeat: no-repeat;
       background-size:cover;
@@ -183,7 +194,7 @@
 .banner {
   position: relative;
   height: 500px;
-  background-position:bottom;
+  background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -201,7 +212,15 @@
 }
 .about-banner {
   background-image: url('homepage_carousel/two.jpg');
-
+}
+.where-banner {
+  background-image: url('garden.jpg');
+}
+.quality-banner {
+  background-image: url('livingroom.jpg');
+}
+.contact-banner {
+  background-image: url('homepage_carousel/three.jpg');
 }
 
 .about-us-intro {

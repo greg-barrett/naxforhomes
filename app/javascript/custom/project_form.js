@@ -8,7 +8,7 @@ document.addEventListener("turbolinks:load", function() {
     var imgLabel=document.createElement("label");
     imgLabel.htmlFor="project_features_attributes_" + index + "_image"
     imgLabel.innerText="Image"
-    console.log(imgLabel)
+    //console.log(imgLabel)
 
     var imgInput=document.createElement("input");
     imgInput.setAttribute('type', 'file')
@@ -16,7 +16,7 @@ document.addEventListener("turbolinks:load", function() {
     imgInput.setAttribute('required', true)
     imgInput.id="project_features_attributes_" + index + "_image";
     imgInput.classList.add("form-control-file")
-    console.log(imgInput)
+    //console.log(imgInput)
 
     var groupOne=document.createElement("div")
     groupOne.classList.add("form-group")
@@ -31,7 +31,7 @@ document.addEventListener("turbolinks:load", function() {
     var descriptionLabel=document.createElement("label");
     descriptionLabel.htmlFor="project_features_attributes_" + index + "_description"
     descriptionLabel.innerText="Description"
-    console.log(descriptionLabel)
+    //console.log(descriptionLabel)
 
     var descriptionInput=document.createElement("input");
     descriptionInput.setAttribute('type', 'text')
@@ -49,7 +49,7 @@ document.addEventListener("turbolinks:load", function() {
     righty.classList.add("align-self-center", "col-lg-8")
     righty.appendChild(groupTwo)
 
-    console.log(descriptionInput)
+    //console.log(descriptionInput)
     var closerCon=document.createElement("div")
     var closer=document.createElement("div")
     closerCon.appendChild(closer)
@@ -66,20 +66,18 @@ document.addEventListener("turbolinks:load", function() {
     featureFieldsDiv.appendChild(closerCon)
     var cols=[lefty, righty];
     cols.forEach( (item) => featureFieldsDiv.appendChild(item))
-    console.log(featureFieldsDiv)
+    //console.log(featureFieldsDiv)
 
     var featurePreviews=document.getElementsByClassName("feature-previews")
-    console.log(featurePreviews)
+    //console.log(featurePreviews)
     var ref=featurePreviews[featurePreviews.length -1]
     ref.parentNode.insertBefore(featureFieldsDiv, ref.nextSibling )
   }
 
   //get the button
   var newFeatureBtn= document.getElementById("new-feature");
-  console.log(newFeatureBtn)
-
-  //add on click
-
-  newFeatureBtn.addEventListener("click", addFeatureFields);
+  if (newFeatureBtn) {
+    newFeatureBtn.addEventListener("click", addFeatureFields);
+  }
 
 })

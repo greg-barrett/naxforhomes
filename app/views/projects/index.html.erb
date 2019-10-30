@@ -4,7 +4,7 @@
 
       <div class="home-about-img-div col-lg-8">
         <%= link_to project_path(project) do %>
-          <div id="hm-abt-img" style="background-image: url(<%= rails_blob_url(project.images.first) if project.images.first %>)"></div>
+          <div id="hm-abt-img" style="background-image: url(<%= rails_blob_url(project.images.first) if project.images.attached? %>)"></div>
         <% end %>
       </div>
 
