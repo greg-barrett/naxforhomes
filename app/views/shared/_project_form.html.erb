@@ -1,4 +1,4 @@
-<div class="spacer"></div>
+
 <%= form_with model: @project, local: true do |f| %>
   <div class="row justify-content-cent">
     <div class="col devise-form-spacer">
@@ -43,19 +43,19 @@
       </div>
       <div class="form-group">
         <%= f.label :add_carousel_images %>
-        <%= f.file_field :images, multiple: true, class:"form-control-file" %>
+        <%= f.file_field :images, multiple: true, class:"form-control-file", direct_upload: true %>
       </div>
     </div>
   </div>
-  <div class="row justify-content-center">
-    <div class="col project-form-spacer">
+  <div class="row justify-content-center project-car-prev">
+    <div class="col ">
       <% if f.object.images.attached? %>
         <h2>Current Carousel Images</h2>
         <p>To remove an image from the carousel, check the delete box before you submit the form</p>
         <div class="carousel-images-display row">
           <% f.object.images.each do |image| %>
             <div class="col-md-4 carousel-images-display-container">
-              <div class="carousel-image-preview" style="background-image: url(<%= rails_blob_url(image) %>)"></div>
+              <div class="carousel-image-preview" style="background-image: url(<%= rails_representation_url(f.object.resized_images(image)) %>)"></div>
               <div class="form-group form-check">
                 <%= check_box_tag("[image_ids][#{image.id}]", 1, false, { class:"form-check-input"}) %>
                 <%= label_tag("[image_ids][#{image.id}]", "Delete", class:"form-check-label") %>
@@ -76,11 +76,11 @@
         <div class="row feature-previews f-p-style">
           <div class="feature-preview-container col-lg-4">
             <% if feature.object.image.attached? %>
-                <div class="feature-image-preview" style="background-image: url(<%= rails_blob_url(feature.object.image) %>)"></div>
+                <div class="feature-image-preview" style="background-image: url(<%= rails_representation_url(feature.object.resized_image) %>)"></div>
             <% else %>
               <div class="form-group">
                 <%= feature.label :image %>
-                <%= feature.file_field :image, class:"form-control-file" %>
+                <%= feature.file_field :image, class:"form-control-file", direct_upload: true %>
               </div>
             <% end %>
             </div>

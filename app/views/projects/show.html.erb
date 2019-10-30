@@ -1,10 +1,11 @@
+<div class="widther">
 <section class="row">
   <section id="project-show-carousel" class="col carousel slide" data-ride="carouse" data-interval="7000" data-wrap="true">
     <div class="carousel-inner project-car-section-show">
       <% @count=0 %>
       <% if @project.images.attached? %>
         <% @project.images.each do |image| %>
-          <div class="carousel-item car-project-sw <%= active(@count) %>" style="background-image: url(<%= rails_representation_url(@project.resized_images(image)) %>)"></div>
+          <div class="carousel-item car-project-sw <%= active(@count) %>" style="background-image: url(<%= rails_representation_url(@project.resized_images(image)) if @project.images.attached? %>)"></div>
           <% @count+=1 %>
         <% end %>
         <% @count=0 %>
@@ -44,3 +45,4 @@
     <% @count=0 %>
   <% end %>
 </section>
+</div>

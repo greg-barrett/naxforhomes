@@ -20,7 +20,7 @@
   <section class="tag-line-section">
     <h2><%= t 'home.tagline' %></h2>
   </section>
-
+<div class="widther">
   <section class="row image-over-section">
       <div class="home-about-img-div col-lg-8">
         <div id="hm-abt-img"></div>
@@ -39,7 +39,7 @@
         <div class="carousel-inner project-car-section">
           <% @count=0 %>
           <% @projects.each do |project| %>
-            <div class="carousel-item car-project-hm <%= active(@count) %>" style="background-image: url(<%= rails_blob_url(project.images.first) if project.images.attached? %>)">
+            <div class="carousel-item car-project-hm <%= active(@count) %>" style="background-image: url(<%= rails_representation_url(project.resized_images(project.images.first)) if project.images.attached? %>)">
               <div class="project-data">
                 <%= link_to project_path(project) do %>
                   <h2 class="name"><%= project.name %> <%= image_tag "right.png", class:"right-arrow" %></h2>
@@ -88,3 +88,4 @@
         <h3 class="fade-header">Where?</h3>
       </div>
   </section>
+</div>
