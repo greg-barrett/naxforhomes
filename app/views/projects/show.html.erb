@@ -37,7 +37,7 @@
       <div class="feature-image-div" style="background-image: url(<%= rails_blob_url(feature.image) if feature.image.attached? %>)"></div>
       <div class="feature-text-div <%= place_it(@count) %>">
         <% @count+=1 %>
-        <p><%= capify(feature.description) %></p>
+        <p><%= capify(feature.description) if feature.description.present? %></p>
       </div>
     </section>
     <% end %>
