@@ -1,14 +1,53 @@
+<% provide :head_tags do %>
+    <script>
+      function initMap() {
+        var center = {lat:36.641996, lng:-4.719480}
+        var malaga={lat: 36.685055, lng: -4.466931}
+        var marbella = {lat: 36.510014, lng: -4.884142}
+        var map = new google.maps.Map(document.getElementById('map'), {zoom: 10, center: center});
+        var marker1 = new google.maps.Marker({position: marbella, map: map});
+        var marker2 = new google.maps.Marker({position: malaga, map: map});
+      }
+    document.addEventListener("turbolinks:load", function(){
+      if (document.getElementById('map')) {
+        initMap()
+      }
+    });
+    </script>
+<% end %>
 <div class="spacer"></div>
 <section class="row where-banner banner">
 </section>
 <section class="row about-us-intro">
   <div class="col-lg-6">
     <h1><%= t 'location.where' %></h1>
-    <p class="p-spacer"><%= t 'location.description' %></p>
+    <p class="p-spacer"><%= t 'location.intro' %></p>
   </div>
   <div clas="col-lg-6">
-
-
-
+    <div class="map-container">
+      <div id="map" class="map-styles"></div>
+      </div>
+  </div>
+</section>
+<section class="row about-us-intro align-self-center">
+  <div class="col-lg-6">
+    <h1>The Golden Mile</h1>
+    <p class="p-spacer"><%= t 'location.golden_mile' %></p>
+  </div>
+  <div clas="col-lg-6">
+    <div class="map-container">
+      <div class="where-images golden-mile map-styles"></div>
+      </div>
+  </div>
+</section>
+<section class="row about-us-intro">
+  <div class="col-lg-6">
+    <h1>Málaga</h1>
+    <p class="p-spacer"><%= t 'location.malaga' %></p>
+  </div>
+  <div clas="col-lg-6">
+    <div class="map-container">
+      <div class="where-images malaga-pomp map-styles" ></div>
+    </div>
   </div>
 </section>
