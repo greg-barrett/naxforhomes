@@ -34,8 +34,8 @@ document.addEventListener("turbolinks:load", function() {
     descriptionLabel.innerText="Description"
     //console.log(descriptionLabel)
 
-    var descriptionInput=document.createElement("input");
-    descriptionInput.setAttribute('type', 'text')
+    var descriptionInput=document.createElement("textarea");
+    //descriptionInput.setAttribute('type', 'text')
     descriptionInput.setAttribute('required', true)
     descriptionInput.setAttribute('name', 'project[features_attributes]['+ index + '][description]')
     descriptionInput.id="project_features_attributes_" + index + "_description";
