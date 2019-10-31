@@ -27,7 +27,7 @@
       </div>
       <div class="home-about-txt-div col-lg-4">
         <%= link_to about_path do %>
-          <p class="home-text"><%= capify(t "home.about_intro") %><%= image_tag "right.png", class:"right-arrow" %></p>
+          <p class="home-text" id="blacken"><%= capify(t "home.about_intro") %><%= image_tag "right.png", class:"right-arrow" %></p>
         <% end %>
         <h3 class="fade-header">Naxfor Homes</h3>
       </div>
@@ -42,7 +42,7 @@
             <div class="carousel-item car-project-hm <%= active(@count) %>" style="background-image: url(<%= rails_representation_url(project.resized_images(project.images.first)) if project.images.attached? %>)">
               <div class="project-data">
                 <%= link_to project_path(project) do %>
-                  <h2 class="name"><%= project.name %> <%= image_tag "right.png", class:"right-arrow" %></h2>
+                  <h2 class="name" id="blacken"><%= project.name %> <%= image_tag "right.png", class:"right-arrow" %></h2>
                   <% end %>
                 <a class="p-controls" href="#projcts-home-car" role="button" data-slide="next">
                   <%= image_tag "arrow-right.png", class:"arrows" %>
@@ -72,7 +72,10 @@
     </div>
     <div class="stats col-lg-4">
       <h4><%= t 'home.stats.three.title' %></h4>
-      <p><%= t 'home.stats.three.phrase' %></p>
+      <%= link_to downloads_quality_path do %>
+        <p id="blacken"><%= t 'home.stats.three.phrase' %></p>
+      <% end %>
+
 
     </div>
   </section>
@@ -83,7 +86,7 @@
       </div>
       <div class="home-about-txt-div col-lg-4">
         <%= link_to where_path do %>
-          <p class="home-text"><%= capify(t "home.where_intro") %><%= image_tag "right.png", class:"right-arrow" %></p>
+          <p class="home-text" id="blacken"><%= capify(t "home.where_intro") %><%= image_tag "right.png", class:"right-arrow" %></p>
         <% end %>
         <h3 class="fade-header">Where?</h3>
       </div>

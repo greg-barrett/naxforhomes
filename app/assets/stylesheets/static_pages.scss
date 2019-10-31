@@ -2,7 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //homepage
-
+#blacken:hover {
+  color: black;
+}
 .car-top {
   position: relative;
   height: 100vh;
@@ -151,8 +153,8 @@
       padding: 10px 0 10px 20px;
       display: inline-block;
       float: left;
-
     }
+
     .right-arrow {
       height: .8em;
       line-height: 1.2em;
