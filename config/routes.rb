@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   get 'downloads/isothree'
   get 'downloads/quality'
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
-  devise_for :admins
+  devise_for :admins, :skip => [:registrations]
+
   root  to: 'static_pages#home'
   get 'static_pages/about', to: 'static_pages#about', as: 'about'
   get 'static_pages/where', to: 'static_pages#where', as: 'where'
