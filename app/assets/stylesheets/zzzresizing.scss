@@ -22,7 +22,7 @@
 
       .home-text{
         .cap-letter {
-          font-size: 3em;
+          font-size: 2.7em;
         }
         font-size: 16px;
       }
@@ -35,11 +35,8 @@
     margin-top: 20px;
   }
   .stats {
-    h4 {
-      font-size: 2.2em;
-    }
+
     p {
-      font-size: 1.4em;
       margin-bottom: 20px;
     }
   }
@@ -107,7 +104,7 @@
   }
   .tag-line-section {
     h2 {
-      font-size: 22px;
+      font-size: 18px;
       padding: 20px 20px;
     }
   }
@@ -163,10 +160,11 @@
   .about-us-intro {
     h1 {
       margin: 20px;
-      font-size: 3.6em;
+      font-size: 2.6em;
     }
     p {
       margin: 0 20px;
+      font-size: 16px;
     }
   }
   .contact-text {
@@ -207,10 +205,10 @@
   }
   .stats {
     h4 {
-      font-size: 2em;
+      font-size: 1.6em;
     }
     p {
-      font-size: 1em;
+      font-size: .8em;
     }
   }
   .project-data-sw {
@@ -229,18 +227,22 @@
   .about-us-intro {
     h1 {
       margin-top: 0px;
-      font-size: 2.6em;
+      font-size: 2.2em;
     }
     p {
-      font-size: 1.1em;
+      font-size: 1em;
     }
   }
   .quality-assurance-intro {
       h1 {
       margin: 20px;
-      font-size: 2.6em;
+      font-size: 2em;
     }
     p {
+      margin: 0 20px 20px 20px;
+      font-size: 1em;
+    }
+    .spcr {
       margin: 0 20px 20px 20px;
       font-size: 1.1em;
     }
@@ -338,11 +340,7 @@
       }
     }
   }
-  #projcts-home-car {
-    .carousel-inner {
-      width: 95%;
-    }
-  }
+
   .confidence {
     margin: 50px 0 20px 0;
   }

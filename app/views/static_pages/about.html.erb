@@ -4,14 +4,20 @@
 </section>
 <section class="row about-us-intro">
     <div class="col-lg-6">
-      <h1>Naxfor Homes</h1>
-      <p class="p-spacer"><%= t 'about.intro'%></p>
+      <h1><i>NAXFOR Homes</i></h1>
+      <p><%= t 'about.intro.a_html'%></p>
+      <p><%= t 'about.intro.b'%></p>
+      <p><%= t 'about.intro.c_html'%></p>
+      <%= link_to downloads_more_info_path do %>
+        <p class="emphasise"><%= t 'about.intro.d_html'%></p>
+      <% end %>
       <div class="about-bullets-section">
         <div class="about-bullets">
           <ol>
             <li><%= t 'about.bullets.one' %></li>
             <li><%= t 'about.bullets.two' %></li>
             <li><%= t 'about.bullets.three' %></li>
+            <li><%= t 'about.bullets.four' %></li>
           </ol>
         </div>
       </div>
@@ -26,28 +32,31 @@
 <section class="row quality-assurance-intro">
     <div class="col-lg-6 align-self-center">
       <h1><%= t 'about.quality.title' %></h1>
-      <p><%= t 'about.quality.text' %></p>
+      <p><%= t 'about.quality.text.a_html' %></p>
+      <p class="spcr"><%= t 'about.quality.text.b' %></p>
     </div>
     <div class="col-lg-6 downloads align-self-center">
       <div class="row">
-        <div class="col-6 rights">
+        <div class="col-4 rights">
           <%= link_to downloads_isoone_path do %>
             <%= image_tag ("safety/ISO9001.png") %>
           <% end %>
         </div>
-        <div class="col-6 lefts">
+        <div class="col-4 centerer">
           <%= link_to downloads_isotwo_path do %>
             <%= image_tag ("safety/ISO14001.png") %>
           <% end %>
         </div>
-        <div class="col-6 rights">
+        <div class="col-4 lefts">
           <%= link_to downloads_isothree_path do %>
             <%= image_tag ("safety/ISO45001.jpg") %>
           <% end %>
        </div>
-        <div class="col-6 lefts align-self-center">
+      </div>
+      <div class="row">
+        <div class="col-12 centerer">
           <%= link_to downloads_quality_path do %>
-            <%= image_tag ("safety/#{t 'about.qa_policy'}") %>
+            <p class="policy-download"><%= t 'about.download' %></p>
           <% end %>
         </div>
       </div>
@@ -57,7 +66,8 @@
 <section class="row about-us-intro">
     <div class="col-lg-6 align-self-center">
       <h1><%= t 'about.social.title' %></h1>
-      <p class="p-spacer"><%= t 'about.social.text' %></p>
+      <p class=""><%= t 'about.social.text.a_html' %></p>
+      <p class="p-spacer"><%= t 'about.social.text.b_html' %></p>
     </div>
 
     <div class="col-lg-6 align-self-center">

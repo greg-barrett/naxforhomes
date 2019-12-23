@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'downloads/isotwo'
   get 'downloads/isothree'
   get 'downloads/quality'
+  get 'downloads/more_info'
   scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
   devise_for :admins, :skip => [:registrations]
 

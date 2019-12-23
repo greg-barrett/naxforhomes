@@ -4,29 +4,32 @@
 </section>
 <section class="row quality-assurance-intro qa-spacer">
     <div class="col-lg-6 align-self-center">
-      <h1><%= t 'legal.title' %></h1>
-      <p><%= t 'legal.text' %></p>
+      <h1><%= t 'about.quality.title' %></h1>
+      <p><%= t 'about.quality.text.a_html' %></p>
+      <p class="spcr"><%= t 'about.quality.text.b' %></p>
     </div>
     <div class="col-lg-6 downloads align-self-center">
       <div class="row">
-        <div class="col-6 rights">
+        <div class="col-4 rights">
           <%= link_to downloads_isoone_path do %>
             <%= image_tag ("safety/ISO9001.png") %>
           <% end %>
         </div>
-        <div class="col-6 lefts">
+        <div class="col-4 centerer">
           <%= link_to downloads_isotwo_path do %>
             <%= image_tag ("safety/ISO14001.png") %>
           <% end %>
         </div>
-        <div class="col-6 rights">
+        <div class="col-4 lefts">
           <%= link_to downloads_isothree_path do %>
             <%= image_tag ("safety/ISO45001.jpg") %>
           <% end %>
        </div>
-        <div class="col-6 lefts align-self-center">
+      </div>
+      <div class="row">
+        <div class="col-12 centerer">
           <%= link_to downloads_quality_path do %>
-            <%= image_tag ("safety/#{t 'about.qa_policy'}") %>
+            <p class="policy-download"><%= t 'about.download' %></p>
           <% end %>
         </div>
       </div>

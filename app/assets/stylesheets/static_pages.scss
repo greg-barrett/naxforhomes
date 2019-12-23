@@ -54,6 +54,7 @@
   text-align: right;
   h2 {
     padding: 40px 80px;
+    font-size: 30px;
   }
 }
 
@@ -89,7 +90,7 @@
     position: relative;
     .home-text{
       padding: 60px 50px 40px 50px;
-      font-size: 20px;
+      font-size: 16px;
       text-indent: -20px;
       text-align: justify;
     }
@@ -98,19 +99,19 @@
       bottom: 3px;
       right: 10px;
       margin-bottom: 0px;
-      font-size: 2.5em;
+      font-size: 2.3em;
       color: #545454;
       text-align: right;
     }
 
     .right-arrow {
-      width: 20px;
+      width: 16px;
       margin-left: 10px
     }
   }
 }
 .cap-letter {
-  font-size: 4em;
+  font-size: 3.5em;
   line-height: .25em;
 }
 
@@ -154,6 +155,7 @@
       padding: 10px 0 10px 20px;
       display: inline-block;
       float: left;
+      font-size: 1.8em;
     }
 
     .right-arrow {
@@ -162,7 +164,7 @@
       margin-left: 10px
     }
     .arrows {
-      width: 25px;
+      width: 21px;
       opacity: .4;
     }
     .arrows:hover {
@@ -191,10 +193,10 @@
   h4 {
     margin-bottom: 20px;
     color: black;
-    font-size: 2.5em;
+    font-size: 2em;
   }
   p {
-    font-size: 1.6em;
+    font-size: 1.2em;
     margin-bottom: 20px;
   }
 
@@ -237,13 +239,20 @@
   .p-spacer {
     margin-bottom: 30px;
   }
+  .emphasise {
+    font-weight: bold;
+    margin: 5px 50px;
+  }
+  .emphasise:hover{
+    opacity: .8;
+  }
   margin: 50px 0;
   h1 {
     margin: 50px;
-    font-size: 3.6em;
+    font-size: 2.9em;
   }
   p {
-    margin: 0 50px 0px 50px;
+    margin: 0 50px 10px 50px;
     font-size: 1.2em;
     text-align: justify;
   }
@@ -268,9 +277,13 @@
   background-color: #e8e1d5;
   h1 {
     margin: 50px;
-    font-size: 3.6em;
+    font-size: 3em;
   }
   p {
+    margin: 0 50px 10px 50px;
+    font-size: 1.2em;
+  }
+  .spcr {
     margin: 0 50px;
     font-size: 1.2em;
     margin-bottom: 50px;
@@ -281,12 +294,23 @@
       img {
         float: left;
       }
-
+    }
+    .policy-download {
+      background-color: white;
+      width: 300px;
+      padding: 15px;
+      margin: 20px auto;
+    }
+    .policy-download:hover {
+      opacity: .8;
     }
     .rights {
       img {
         float: right;
       }
+    }
+    .centerer {
+      text-align: center;
     }
   }
   img{

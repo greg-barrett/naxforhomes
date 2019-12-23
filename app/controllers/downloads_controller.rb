@@ -16,4 +16,8 @@ class DownloadsController < ApplicationController
   def quality
     send_file "#{Rails.root}/app/assets/downloads/Politica_Integrada.pdf", :type => 'pdf', :disposition => 'attachment'
   end
+
+  def more_info
+    send_file "#{Rails.root}/app/assets/downloads/more_info.pdf", :type => 'pdf', :disposition => 'attachment'
+  end
 end
