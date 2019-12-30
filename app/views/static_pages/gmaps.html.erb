@@ -1,0 +1,21 @@
+<% provide :head_tags do %>
+    <script>
+      function initMap() {
+        var center = {lat:36.641996, lng:-4.719480}
+        var malaga={lat: 36.685055, lng: -4.466931}
+        var marbella = {lat: 36.510014, lng: -4.884142}
+        var map = new google.maps.Map(document.getElementById('map'), {zoom: 10, center: center});
+        var marker1 = new google.maps.Marker({position: marbella, map: map});
+        var marker2 = new google.maps.Marker({position: malaga, map: map});
+      }
+    document.addEventListener("turbolinks:load", function(){
+      if (document.getElementById('map')) {
+        initMap()
+      }
+    });
+    </script>
+<% end %>
+
+<div class="map-container">
+  <div id="map" class="map-styles"></div>
+  </div>

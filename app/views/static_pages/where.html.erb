@@ -1,20 +1,4 @@
-<% provide :head_tags do %>
-    <script>
-      function initMap() {
-        var center = {lat:36.641996, lng:-4.719480}
-        var malaga={lat: 36.685055, lng: -4.466931}
-        var marbella = {lat: 36.510014, lng: -4.884142}
-        var map = new google.maps.Map(document.getElementById('map'), {zoom: 10, center: center});
-        var marker1 = new google.maps.Marker({position: marbella, map: map});
-        var marker2 = new google.maps.Marker({position: malaga, map: map});
-      }
-    document.addEventListener("turbolinks:load", function(){
-      if (document.getElementById('map')) {
-        initMap()
-      }
-    });
-    </script>
-<% end %>
+
 <div class="spacer"></div>
 <section class="row where-banner banner">
 </section>
@@ -25,8 +9,8 @@
   </div>
   <div clas="col-lg-6">
     <div class="map-container">
-      <div id="map" class="map-styles"></div>
-      </div>
+    <iframe class="map-styles" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-4.881362915039063%2C36.49086941889727%2C-3.974990844726563%2C36.95702508148506&amp;layer=transportmap&amp;marker=36.72457610850298%2C-4.4281768798828125" style="border: 0px solid black"></iframe>
+    </div>
   </div>
 </section>
 <section class="row about-us-intro align-self-center">
