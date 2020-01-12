@@ -1,6 +1,8 @@
 <section class="row footer">
-    <div class="data logo col-lg-2">
-      <%= image_tag "naxfor_logo.jpg" %>
+    <div class="data logo col-lg-3">
+      <%= image_tag "naxfor_logo.jpg", "class" => "mx-auto d-block" %>
+      <p class="foot-tagline" id="tag-one"><%= t 'footer.tagline.one' %></p>
+      <p class="foot-tagline" id="tag-two"><%= t 'footer.tagline.two' %></p>
     </div>
     <div class="data address col-lg-3">
       <p>Naxfor Ingenieria Y Infraestructuras, S.L.</p>
@@ -18,7 +20,7 @@
       <p><b><%= link_to (t 'nav.contact'), contact_path %></b></p>
     </div>
 
-    <div class="safety data col-lg-4">
+    <div class="safety data col-lg-3">
       <%= link_to downloads_isoone_path do %>
         <%= image_tag ("safety/ISO9001.png") %>
       <% end %>
@@ -35,6 +37,12 @@
 </section>
 <section class="row">
   <div class="col fade-links">
+    <p>www.naxfor.com</p><span>|</span>
+    <p>info@naxfor.com</p>
+  </div>
+</section>
+<section class="row">
+  <div class="col fade-links">
     <p>Copyright <%= Date.today.year %> Naxfor Homes</p><span>|</span>
     <p><%= link_to t('home.legal_notice'), legal_advisory_path %></p><span>|</span>
     <p><%= link_to t('home.privacy'), privacy_path %></p>
@@ -43,11 +51,5 @@
     <% else %>
       <span>|</span><p><%= link_to "#{t 'sign_in'}", new_admin_session_path %></p>
     <% end %>
-  </div>
-</section>
-<section class="row">
-  <div class="col fade-links">
-    <p>www.naxfor.com</p><span>|</span>
-    <p>info@naxfor.com</p>
   </div>
 </section>

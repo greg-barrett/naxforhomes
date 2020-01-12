@@ -1,28 +1,36 @@
 .footer {
   margin-top: 50px;
-
   padding-top: 20px;
   background-color: #e8e1d5;
   .logo {
     img {
-      margin: 0 15px;;
+      margin: 0 0 16px 0;
       width: 100%;
       max-width:180px;
-
     }
   }
   .data {
     p {
-      display: inline-block;
       margin-right: 4px;
     }
-
+    .foot-tagline {
+      text-align: center;
+    }
+    #tag-one {
+      color: #063271;
+    }
+    #tag-two {
+      font-family: 'Shadows Into Light', cursive;
+      color: #545454;
+      font-size: 25px;
+    }
   }
   .address{
     text-align: center;
-    margin-top: 45px;
+
     p {
       margin-bottom: .5rem;
+      display: inline-block;
     }
 
   }
@@ -32,12 +40,14 @@
 
     p {
       margin-bottom: .5rem;
+      display: inline-block;
     }
 
   }
   .safety {
     text-align: center;
     img {
+      display: none;
       width:20%;
       max-width: 92px;
       margin-right: 1%;
@@ -46,13 +56,16 @@
   }
 }
 .fade-links {
-
   text-align: center;
   background-color: #e8e1d5;
   color: #8e8e8e;
   p {
     display: inline-block;
 
+  }
+  a {
+
+    color: #8e8e8e !important;
   }
   span {
     margin: 0 5px;

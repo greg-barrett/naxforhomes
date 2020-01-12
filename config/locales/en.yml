@@ -74,3 +74,7 @@ en:
       email: "Email"
       message: "Message"
       submit: "Send"
+  footer:
+    tagline:
+      one: "SPECIALISTS IN THE CONSTRUCTION OF COMFORT"
+      two: "Socially Committed"

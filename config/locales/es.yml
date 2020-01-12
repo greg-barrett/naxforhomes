@@ -73,3 +73,7 @@ es:
       email: "Email"
       message: "Mensaje"
       submit: "Enviar"
+  footer:
+    tagline:
+      one: "ESPECIALISTAS EN CONSTRUCCIÓN DEL CONFORT"
+      two: "Socialmente comprometidos"
