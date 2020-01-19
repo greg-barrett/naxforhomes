@@ -46,7 +46,7 @@ es:
       one: "ESPECIALISTAS EN CONSTRUCCION DEL CONFORT"
       two: "Equipo Humano Técnicamente Cualificado y Socialmente Comprometido"
       three: "20 años de experiencia en el sector y proyección"
-      four: "<b>ISO 9001:2015 / ISO 14001:2015 / ISO 45001:2018</b>"
+      four_html: "<b>ISO 9001:2015 / ISO 14001:2015 / ISO 45001:2018</b>"
     quality:
       title: "Calidad Asegurada"
       text:
