@@ -38,25 +38,25 @@ es:
     qa_policy: "politica_de_calidad.png"
     download: "Descargar Política de Calidad"
     intro:
-      a_html: "<i>NAXFOR Homes</i>, es una compañía muy especializada en CONSTRUCCIÓN del Confort, basado en el knowhow de su experimentado equipo humano y con una marcada filosofía de excelencia, innovación y sostenibilidad medioambiental, aplicado en todos y en cada uno de los proyectos y obras confiados a nuestra empresa."
+      a_html: "<i><b>NAXFOR Homes</b></i>, es una compañía muy especializada en CONSTRUCCIÓN del Confort, basado en el knowhow de su experimentado equipo humano y con una marcada filosofía de excelencia, innovación y sostenibilidad medioambiental, aplicado en todos y en cada uno de los proyectos y obras confiados a nuestra empresa."
       b: "Desde hace dos décadas, esta empresa ha experimentado un crecimiento sostenido notable y constante. Todo ello, respaldado por un equipo de sólidos profesionales con una amplia experiencia en el sector."
-      c_html: "<i>NAXFOR Homes</i>, ha sido capaz de optimizar su rendimiento en términos de eficiencia competitiva y satisfacción del cliente al tiempo que ofrece un servicio de calidad óptima."
+      c_html: "<i><b>NAXFOR Homes</b></i>, ha sido capaz de optimizar su rendimiento en términos de eficiencia competitiva y satisfacción del cliente al tiempo que ofrece un servicio de calidad óptima."
       d_html: "Leer más acerca de <i>NXH</i>..."
     bullets:
       one: "ESPECIALISTAS EN CONSTRUCCION DEL CONFORT"
       two: "Equipo Humano Técnicamente Cualificado y Socialmente Comprometido"
       three: "20 años de experiencia en el sector y proyección"
-      four: "ISO 9001 / ISO 14001:2015 y OHSAS 18001:2015"
+      four: "ISO 9001:2015 / ISO 14001:2015 / ISO 45001:2018"
     quality:
       title: "Calidad Asegurada"
       text:
-        a_html: "<i>NAXFOR Homes</i> está certificada en la actividad de construcción en ISO 9001:2015/ISO 14001:2015/ISO 45001:2018"
+        a_html: "<i><b>NAXFOR Homes</b></i> está certificada en la actividad de construcción en <b>ISO 9001:2015/ISO 14001:2015/ISO 45001:2018</b>"
         b: "Nuestra Política de Gestión se basa en satisfacer al máximo a nuestros Clientes mediante la Profesionalidad del Servicio, respetando el Medio Ambiente y alcanzando un alto nivel de Prevención de Riesgos Laborales en todos los procesos de nuestra actividad, además de cumplir los requisitos legales, requisitos que el cliente suscriba y otros requisitos aplicables."
     social:
       title: "Responsabilidad Social"
       text:
-        a_html: "Desde la dirección de <i>NAXFOR</i> se busca conciliar eficacia empresarial con los principios sociales de democracia, auto ayuda, apoyo a la comunidad y justicia distributiva."
-        b_html: "En ese sentido, <i>NAXFOR</i> trabaja y pone su esfuerzo en mejorar la calidad de sus trabajadores, reducir el impacto sobre el medio ambiente y el cambio climático, colaborar en el bienestar desarrollo de la comunidad y realizar una labor de comercialización responsable."
+        a_html: "Desde la dirección de <i><b>NAXFOR Homes</b></i> se busca conciliar eficacia empresarial con los principios sociales de democracia, auto ayuda, apoyo a la comunidad y justicia distributiva."
+        b_html: "En ese sentido, <i><b>NAXFOR Homes</b></i> trabaja y pone su esfuerzo en mejorar la calidad de sus trabajadores, reducir el impacto sobre el medio ambiente y el cambio climático, colaborar en el bienestar desarrollo de la comunidad y realizar una labor de comercialización responsable."
   legal:
     title: "Calidad Asegurada"
     text: "Spanish Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."

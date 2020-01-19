@@ -1,55 +1,38 @@
 <section class="row footer">
-    <div class="data logo col-lg-3">
-      <%= image_tag "naxfor_logo.jpg", "class" => "mx-auto d-block" %>
+    <div class="logo">
       <p class="foot-tagline" id="tag-one"><%= t 'footer.tagline.one' %></p>
       <p class="foot-tagline" id="tag-two"><%= t 'footer.tagline.two' %></p>
-    </div>
-    <div class="data address col-lg-3">
-      <p>Naxfor Ingenieria Y Infraestructuras, S.L.</p>
-      <p>Cuevas Bajas 2</p>
-      <p>Edificio Picasso</p>
-      <p>29004</p>
-      <p>Málaga</p>
-    </div>
-
-    <div class="links data col-lg-3">
-      <p><%= link_to ((t 'nav.about_us')), about_path %></p>
-      <p><%= link_to (t 'nav.projects'), projects_path %></p>
-      <p><%= link_to (t 'nav.location'), where_path %></p>
-      <p><%= link_to (t 'nav.legal'), legal_path %></p>
-      <p><b><%= link_to (t 'nav.contact'), contact_path %></b></p>
-    </div>
-
-    <div class="safety data col-lg-3">
-      <%= link_to downloads_isoone_path do %>
-        <%= image_tag ("safety/ISO9001.png") %>
-      <% end %>
-      <%= link_to downloads_isotwo_path do %>
-        <%= image_tag ("safety/ISO14001.png") %>
-      <% end %>
-      <%= link_to downloads_isothree_path do %>
-        <%= image_tag ("safety/ISO45001.jpg") %>
-      <% end %>
-      <%= link_to downloads_quality_path do %>
-        <%= image_tag ("safety/#{t 'about.qa_policy'}") %>
-      <% end %>
+      <%= image_tag "naxfor_logo.jpg", "class" => "mx-auto d-block" %>
+      <div class="address">
+        <p>NAXFOR INGENIERIA Y INFRAESTRUCTURAS, S.L.</p>
+        <p>Cuevas Bajas 2, Edificio Picasso, 29004, Málaga</p>
+      </div>
     </div>
 </section>
-<section class="row">
-  <div class="col fade-links">
-    <p>www.naxfor.com</p><span>|</span>
+
+<section class="row foot-nav">
+  <div class="fade-links">
+    <p><a href="http://www.naxfor.com" id="blacken">www.naxfor.com</a></p><span>|</span>
     <p>info@naxfor.com</p>
   </div>
+  <div class="low-nav-links">
+    <p><%= link_to ((t 'nav.about_us')), about_path, id: "blacken" %></p>
+    <p><%= link_to (t 'nav.projects'), projects_path, id: "blacken" %></p>
+    <p><%= link_to (t 'nav.location'), where_path, id: "blacken" %></p>
+    <p><%= link_to (t 'nav.legal'), legal_path, id: "blacken" %></p>
+    <p><b><%= link_to (t 'nav.contact'), contact_path, id: "blacken" %></b></p>
+  </div>
 </section>
+
 <section class="row">
-  <div class="col fade-links">
+  <div class="footer-minor">
     <p>Copyright <%= Date.today.year %> Naxfor Homes</p><span>|</span>
-    <p><%= link_to t('home.legal_notice'), legal_advisory_path %></p><span>|</span>
-    <p><%= link_to t('home.privacy'), privacy_path %></p>
+    <p><%= link_to t('home.legal_notice'), legal_advisory_path, id: "blacken" %></p><span>|</span>
+    <p><%= link_to t('home.privacy'), privacy_path, id: "blacken" %></p>
     <% if admin_signed_in? %>
-      <span>|</span><p><%= link_to "#{t 'sign_out'}", destroy_admin_session_path, method: :delete %></p><span>|</span><%= link_to ((t 'nav.new_project')), new_project_path %>
+      <span>|</span><p><%= link_to "#{t 'sign_out'}", destroy_admin_session_path, method: :delete %></p><span>|</span><%= link_to ((t 'nav.new_project')), new_project_path, id: "blacken" %>
     <% else %>
-      <span>|</span><p><%= link_to "#{t 'sign_in'}", new_admin_session_path %></p>
+      <span>|</span><p><%= link_to "#{t 'sign_in'}", new_admin_session_path, id: "blacken" %></p>
     <% end %>
   </div>
 </section>
