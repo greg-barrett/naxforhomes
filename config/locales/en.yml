@@ -10,7 +10,7 @@ en:
   sign_out: "Log Out"
   home:
     tagline: "Creators of Bespoke Homes in and around Marbella"
-    about_intro: "English vultum tibi, si incessum fingeres,quo gravior viderere, non esses tui similis. Laelius clamores sofòw ille so lebat Edere compellans gumias ex ordine nostros..."
+    about_intro: "We put at your disposal 20 years of experience in the area, the most qualified professional team and the best quality certifications to make your home a reality in the most efficient and satisfactory way."
     stats:
       one:
         title: "Expert Team"
@@ -31,16 +31,16 @@ en:
     reform: "Reform"
   location:
     where: "Where"
-    intro: "English Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-    malaga: "English Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
-    golden_mile: "English Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+    intro: "The Costa del Sol, from the western coast of Estepona to Málaga city, has long been one of Europe’s most attractive regions, thanks to more than 3000 hours of sun per year, a gentle climate, kilometre upon kilometre of golden sand beaches, beautiful natural ports, rich history and deep influences from different cultures. Due to its infrastructure network, the region is the best starting position from where discover the treasures of Andalusia – such as Granada, Seville, Cordoba or Cadiz – while it is also home to astonishing landscapes, the famous ‘white villages’ (rich in traditions) and offers a wealth of possibilities for sports in its surroundings, from skiing in the eastern Sierra Nevada to surfing in the western Atlantic coast."
+    malaga: "In the last decade Málaga has constantly been declared the best place to live in Spain and this is really no surprise as it is at heart an unspoilt city with a beautiful old town, newly refurbished promenade and wonderful museums and restaurants. It combines all the facilities and activities of a main city with the relaxed spirit of the Costa del Sol. Its airport, one of the most important of the country, lies just 8km outside the city limits and flights come and go from right across the world."
+    golden_mile: "Located in the heart of the Costa del Sol, Marbella attracts a diverse variety of nationalities to its sandy shores, benefitting as it does from the micro-climate created by the near mountain range, which frames the seaside town and bestows it with mild temperatures in the winter and wonderfully warm, long summers. Quality has become its hallmark, so it is little surprise that the most exclusive neighbourhoods in Southern Europe, such as La Zagaleta and Marbella's Sierra Blanca, are located here."
   about:
     qa_policy: "q_a_policy.png"
     download: "Download Quality Assurance Policy"
     intro:
-      a_html: "<i><b>NAXFOR Homes</b></i>, es una compañía muy especializada en CONSTRUCCIÓN del Confort, basado en el knowhow de su experimentado equipo humano y con una marcada filosofía de excelencia, innovación y sostenibilidad medioambiental, aplicado en todos y en cada uno de los proyectos y obras confiados a nuestra empresa."
-      b: "Desde hace dos décadas, esta empresa ha experimentado un crecimiento sostenido notable y constante. Todo ello, respaldado por un equipo de sólidos profesionales con una amplia experiencia en el sector."
-      c_html: "<i><b>NAXFOR Homes</b></i>, ha sido capaz de optimizar su rendimiento en términos de eficiencia competitiva y satisfacción del cliente al tiempo que ofrece un servicio de calidad óptima. "
+      a_html: "<i><b>NAXFOR Homes</b></i> is a company very specialized in CONSTRUCTION of Comfort, based on the knowhow of its experienced human team and with a marked philosophy of excellence, innovation and environmental sustainability, applied in each and every one of the projects and works entrusted to our company."
+      b: "For two decades, this company has experienced remarkable and constant growth. All this, backed by a team of solid professionals with extensive experience in the sector."
+      c_html: "<i><b>NAXFOR Homes</b></i> has been able to optimize its performance in terms of competitive efficiency and customer satisfaction while offering optimum quality service."
       d_html: "Learn more about <i>NXH</i>..."
     bullets:
       one: "Experts in Engineering, Construction and Reforms"
@@ -50,14 +50,13 @@ en:
     quality:
       title: "Quality Assured"
       text:
-        a_html: "<i><b>NAXFOR Homes</b></i> está certificada en la actividad de construcción en <b>ISO 9001:2015 / ISO 14001:2015 / ISO 45001:2018</b>"
-        b: "Nuestra Política de Gestión se basa en satisfacer al máximo a nuestros Clientes mediante la Profesionalidad del Servicio, respetando el Medio Ambiente y alcanzando un alto nivel de Prevención de Riesgos Laborales en todos los procesos de nuestra actividad, además de cumplir los requisitos legales, requisitos que el cliente suscriba y otros requisitos aplicables."
+        a_html: "<i><b>NAXFOR Homes</b></i> is certified in the construction activity in <b>ISO 9001:2015 / ISO 14001:2015 / ISO 45001:2018</b>"
+        b: "Our Management Policy is based on satisfying our clients to the maximum through professionalism of the service, respecting the environment and achieving a high level of occupational risk prevention in all the processes of our activity, in addition to complying with the legal requirements, requirements that the customer subscribes and other applicable requirements."
     social:
       title: "Socially Responsible"
       text:
-        a_html: "Desde la dirección de <i><b>NAXFOR Homes</b></i> se busca conciliar eficacia empresarial con los principios sociales de democracia, auto ayuda, apoyo a la comunidad y justicia distributiva."
-        b_html: "En ese sentido, <i><b>NAXFOR Homes</b></i> trabaja y pone su esfuerzo en mejorar la calidad de sus trabajadores, reducir el impacto sobre el medio ambiente y el cambio climático, colaborar en el bienestar desarrollo de la comunidad y realizar una labor de comercialización responsable."
-
+        a_html: "<i><b>NAXFOR Homes</b></i> management seeks to reconcile business effectiveness with the social principles of democracy, self-help, community support and distributive justice."
+        b_html: "In this sense, <i><b>NAXFOR Homes</b></i> works and puts its effort to improve the quality of its workers, reduce the impact on the environment and climate change, collaborate in the well-being, development of the community and carry out responsible commercialization work."
   legal:
     title: "Quality Assured"
     text: "English Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."

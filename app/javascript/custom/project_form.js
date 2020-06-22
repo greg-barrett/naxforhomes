@@ -14,7 +14,7 @@ document.addEventListener("turbolinks:load", function() {
     imgInput.setAttribute('type', 'file')
     imgInput.setAttribute('name', 'project[features_attributes]['+ index + '][image]')
     imgInput.setAttribute('required', true)
-    imgInput.setAttribute('data-direct-upload-url', "http://104.248.198.52/rails/active_storage/direct_uploads?locale=en")
+    imgInput.setAttribute('data-direct-upload-url', "http://www.naxforhomes.com/rails/active_storage/direct_uploads?locale=en")
     imgInput.id="project_features_attributes_" + index + "_image";
     imgInput.classList.add("form-control-file")
     //console.log(imgInput)
